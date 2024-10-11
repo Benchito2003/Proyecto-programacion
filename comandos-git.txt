@@ -50,7 +50,8 @@ git remote add origin (url del repositorio remoto) #añadimos un "origin" a nues
 git remote remove origin #eliminamos su origin si es que tiene uno
 git push -u origin rama-principal #vinculamos el comando git push con la rama principal para empezar a hacer nuestros push (de manera que ya no tengamos que especificar la rama a subir entra cada actaulización)
 
-git pull #es como un git merge pero entre el repositorio local y el remoto
+git pull #es como un git merge pero entre del repositorio local a el remoto
+git push #subimos al repositorio remoto nuestro repositorio local
 
 git fecth #nos trae el repositorio remoto al local pero en forma de rama para poder checar los cambios antes de aplicarles un merge
 git switch --detach origin/rama-github #nos cambiamos a la rama que trajimos para poder ver esos cambios
