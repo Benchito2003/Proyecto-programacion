@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Parcial 1}{2}{}%
+\contentsline {section}{\numberline {1.1}keywords}{2}{}%
+\contentsline {section}{\numberline {1.2}Introducción.}{2}{}%
+\contentsline {subsubsection}{Objetivo general}{2}{}%
+\contentsline {subsubsection}{Objetivos específicos}{3}{}%
+\contentsline {section}{\numberline {1.3}Metodología (propuesta).}{3}{}%

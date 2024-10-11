@@ -1,0 +1,84 @@
+\documentclass[14pt]{report}
+
+%Para ponerlo en español:
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+%para poder citar
+\usepackage[backend=biber]{biblatex}
+\bibliography{bibliografía.bib}
+
+%Para poder añadir imágenes:
+\usepackage{graphicx}
+
+% Title Page (ya no es necesario)
+\title{Proyecto: Interfaz para un filtro de señal cardiaca}
+\author{Caballero Trinidad Flor Isabel. \\ Cortés Ramírez Samuel Jefte. \\ García García Ian Pablo. \\ Pérez Roldan Eduardo Alejandro. \\ Cabañas Alba Alejandro. \\ Alfonso Gamboa Rubén.}
+
+
+\begin{document}
+
+%Portada
+\begin{titlepage}
+	\centering
+	{\includegraphics[width=0.2\textwidth]{recursos/Universidad_Veracruzana}\par}
+	\vspace{1cm}
+	{\bfseries\LARGE Universidad Veracruzana \par}
+	\vspace{1cm}
+	{\scshape\Large Ingeniería Biomédica \par}
+	\vspace{3cm}
+	{\scshape\Huge Interfaz para un filtro de frecuencia cardiáca. \par}
+	\vspace{2cm}
+	{\itshape\Large Proyecto. \par}
+	\vfill
+	{\Large Autores: \par}
+	{\Large Caballero Trinidad Flor Isabel. \\ Cortés Ramírez Samuel Jefte. \\ García García Ian Pablo. \\ Pérez Roldan Eduardo Alejandro. \\ Cabañas Alba Alejandro. \\ Alfonso Gamboa Rubén. \par}
+	\vfill
+	
+\end{titlepage}
+
+%\tableofcontents
+\chapter{Parcial 1}
+	\section{keywords}
+		\begin{itemize}
+			\item Frecuencia cardaica.
+			\item Interfaz.
+			\item Filtro de frecuencia cardaiaca.
+			\item Interfaz para un filtro.
+		\end{itemize}
+	
+	\section{Introducción.}
+		\subsection*{Pregunta de investigación.}
+		¿Cómo desarrollar una interfaz que facilite la visualización y procesamiento de datos de frecuencia cardíaca en python? 
+		\subsection*{Criterios de selección.}
+		\begin{itemize}
+			\item Tiene que ser en python
+			\item Solo de la librería: 
+		\end{itemize}
+		\subsection*{Objetivos: general y específicos}
+			\subsubsection{Objetivo general}
+			Mostar de manera gráfica una señal cardíaca
+			\subsubsection{Objetivos específicos}
+				\begin{itemize}
+					\item Desarrollar interfaz amigable con el usuario.
+					\item Leer y escribir ficheros desde Python. 
+					\item Diseñar interfaz para una gráfica. 
+					\item Garantizar funcionalidad del sistema. 
+					\item Desarrollo de un código legible para el programador. 
+				\end{itemize}
+		\subsection*{Justificación.}
+		\subsection*{Marco referencial y teórico.(citas)}
+		\subsubsection{Marco teórico}
+		\paragraph{¿Qué es una señal biomédica?}
+		\paragraph{¿Qué es una frecuencia cardiaca?}
+		\paragraph{¿Qué es una interfaz?} "Conexión o frontera común entre dos aparatos o sistemas independientes, que permite el intercambio de información o la coordinación de sus funciones." \cite{rae_interfaz}
+		\paragraph{¿Qué es Python?}
+		\paragraph{¿Qué es una base de datos?}
+		\paragraph{¿Qué es frontend y backend?}
+		
+	\section{Metodología (propuesta).}
+	\printbibliography
+\begin{abstract}
+\end{abstract}
+
+\end{document}          
