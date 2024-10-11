@@ -19,12 +19,63 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{rae_interfaz}{misc}{}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+    \entry{FrontendBackend}{misc}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labeltitlesource}{title}
-      \field{title}{Interfaz}
-      \warn{\item misc entry 'rae_interfaz' (bibliografía.bib): Invalid format 's.f.' of date field 'date' - ignoring}
+      \field{howpublished}{\url{https://www.gluo.mx/blog/frontend-y-backend-que-son-y-cuales-son-sus-diferencias}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{{F}rontend y backend: ¿{Q}ué son y cuáles son sus diferencias? --- gluo.mx}
+    \endentry
+    \entry{unam}{misc}{}
+      \field{sortinit}{p}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.ptolomeo.unam.mx:8080/xmlui/bitstream/handle/132.248.52.100/219/A6.pdf?sequence=6}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{ptolomeo.unam.mx}
+    \endentry
+    \entry{rae_interfaz}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7d19412a3c79b3d2f800164479ed5cb8}{%
+           family={RAE},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \strng{fullhash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \strng{bibnamehash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \strng{authorbibnamehash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \strng{authornamehash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \strng{authorfullhash}{7d19412a3c79b3d2f800164479ed5cb8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://dle.rae.es/interfaz}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{interfaz | {D}iccionario de la lengua española --- dle.rae.es}
+    \endentry
+    \entry{monografias}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bc8136466963bf8e85853e0b59a972ad}{%
+           family={Saldana},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc8136466963bf8e85853e0b59a972ad}
+      \strng{fullhash}{bc8136466963bf8e85853e0b59a972ad}
+      \strng{bibnamehash}{bc8136466963bf8e85853e0b59a972ad}
+      \strng{authorbibnamehash}{bc8136466963bf8e85853e0b59a972ad}
+      \strng{authornamehash}{bc8136466963bf8e85853e0b59a972ad}
+      \strng{authorfullhash}{bc8136466963bf8e85853e0b59a972ad}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.monografias.com/trabajos88/procesamiento-senales-biomedicas-electrocardiogramas-y-electroencefalogramas/procesamiento-senales-biomedicas-electrocardiogramas-y-electroencefalogramas}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{{P}rocesamiento de señales biomédicas en electrocardiogramas y electroencefalogramas --- monografias.com}
     \endentry
   \enddatalist
 \endrefsection

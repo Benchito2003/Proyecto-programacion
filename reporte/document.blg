@@ -1,16 +1,14 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'document.blg'
-[165] biber-MSWIN64:340> INFO - === 
-[222] Biber.pm:419> INFO - Reading 'document.bcf'
-[396] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
-[426] Biber.pm:4419> INFO - Processing section 0
-[442] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografía.bib' for section 0
-[524] bibtex.pm:1713> INFO - LaTeX decoding ...
-[541] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografía.bib'
-[560] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[560] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[560] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
-[561] bbl.pm:660> INFO - Writing 'document.bbl' with encoding 'UTF-8'
-[562] bbl.pm:763> INFO - Output to document.bbl
-[562] Biber.pm:131> WARN - misc entry 'rae_interfaz' (bibliografía.bib): Invalid format 's.f.' of date field 'date' - ignoring
-[562] Biber.pm:133> INFO - WARNINGS: 1
+[150] biber-MSWIN64:340> INFO - === 
+[208] Biber.pm:419> INFO - Reading 'document.bcf'
+[369] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[399] Biber.pm:4419> INFO - Processing section 0
+[414] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografía.bib' for section 0
+[516] bibtex.pm:1713> INFO - LaTeX decoding ...
+[530] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografía.bib'
+[558] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[558] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[559] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[563] bbl.pm:660> INFO - Writing 'document.bbl' with encoding 'UTF-8'
+[565] bbl.pm:763> INFO - Output to document.bbl
