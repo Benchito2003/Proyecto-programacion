@@ -1,1 +1,0 @@
-#Propuesta de diseño:
