@@ -27,6 +27,26 @@
       \field{note}{[Accessed 11-10-2024]}
       \field{title}{{F}rontend y backend: ¿{Q}ué son y cuáles son sus diferencias? --- gluo.mx}
     \endentry
+    \entry{uniriojaSistemaMonitorizacin}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4abf0bfcc7cfff39ce0c121c31fc1e16}{%
+           family={https://dialnet.unirioja.es/servlet/autor?codigo=3660807},
+           familyi={h\bibinitperiod}}}%
+      }
+      \strng{namehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \strng{fullhash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \strng{bibnamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \strng{authorbibnamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \strng{authornamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \strng{authorfullhash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
+      \field{sortinit}{h}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://dialnet.unirioja.es/servlet/articulo?codigo=5038480}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{{S}istema de monitorización remoto de señales biomédicas vía celular --- dialnet.unirioja.es}
+    \endentry
     \entry{unam}{misc}{}
       \field{sortinit}{p}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
@@ -54,6 +74,14 @@
       \field{howpublished}{\url{https://dle.rae.es/interfaz}}
       \field{note}{[Accessed 11-10-2024]}
       \field{title}{interfaz | {D}iccionario de la lengua española --- dle.rae.es}
+    \endentry
+    \entry{elsevierRecuperacinFrecuencia}{misc}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.elsevier.es/en-revista-revista-andaluza-medicina-del-deporte-284-articulo-recuperacion-frecuencia-cardiaca-ventilacion-su-X1888754609428661}}
+      \field{note}{[Accessed 11-10-2024]}
+      \field{title}{{R}ecuperación de la frecuencia cardiaca y ventilación, y su relación con la lactacidemia, tras una prueba de esfuerzo en jóvenes deportistas --- elsevier.es}
     \endentry
     \entry{monografias}{misc}{}
       \name{author}{1}{}{%

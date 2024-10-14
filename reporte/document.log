@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.30)  11 OCT 2024 12:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.30)  14 OCT 2024 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,10 +367,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count393
 \@quotereset=\count394
-
-LaTeX Warning: Unused global option(s):
-    [14pt].
-
 (document.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -451,22 +447,22 @@ Cap\'{\i }tulo 1.
 
 ] [2]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-7.
+8.
  (C:\Users\Chino\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 67.
+(Font)              <7> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 67.
+(Font)              <5> on input line 68.
 
-Overfull \hbox (34.46582pt too wide) in paragraph at lines 70--70
+Overfull \hbox (34.46582pt too wide) in paragraph at lines 71--71
 \T1/cmtt/m/n/10 com / trabajos88 / procesamiento -[] senales -[] biomedicas -[]
  electrocardiogramas -[]
  []
 
 
-Overfull \hbox (82.20428pt too wide) in paragraph at lines 70--70
+Overfull \hbox (82.20428pt too wide) in paragraph at lines 71--71
 \T1/cmtt/m/n/10 y -[] electroencefalogramas / procesamiento -[] senales -[] bio
 medicas -[] electrocardiogramas -[]
  []
@@ -482,27 +478,18 @@ LaTeX Info: Redefining \% on input line 9.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                document
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  11077 strings out of 474485
- 209371 string characters out of 5743734
- 1931542 words of memory out of 5000000
+ 209638 string characters out of 5743734
+ 1933542 words of memory out of 5000000
  33286 multiletter control sequences out of 15000+600000
  568736 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,5n,81p,731b,1798s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,5n,81p,731b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Chino\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1000.pk> <C:\Users\Chino\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecti1000.pk> <C:\Users\Chino\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -515,9 +502,9 @@ eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Chino\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2488.pk> <C:\Users\Chino\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Chino\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on document.pdf (4 pages, 130927 bytes).
+Output written on document.pdf (4 pages, 136837 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
+ 346 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

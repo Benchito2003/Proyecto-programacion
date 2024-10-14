@@ -1,4 +1,4 @@
-\documentclass[14pt]{report}
+\documentclass{report}
 
 %Para ponerlo en español:
 \usepackage[T1]{fontenc}
@@ -40,16 +40,7 @@
 %\tableofcontents
 \chapter{Parcial 1}
 	\section{keywords}
-		\begin{itemize}
-			\item Frecuencia cardaica.
-			\item Interfaz.
-			\item Filtro de frecuencia cardaiaca.
-			\item Interfaz para un filtro.
-			\item SPython.
-			\item Interfaz Médica.
-			\item Ingeniería Biomédica.
-			\item Arduino
-		\end{itemize}
+	Frecuencia cardaica, Interfaz, Filtro de frecuencia cardaiaca, Interfaz para un filtro, SPython, Interfaz Médica, Ingeniería Biomédica, Arduino.
 	
 	\section{Introducción.}
 		El siguiente proyecto tiene como finalidad responder a la pregunta ¿Cómo desarrollar una interfaz que facilite la visualización y procesamiento de datos de la frecuencia cardiaca?, teniendo como principal objetivo visualizar la frecuencia cardiaca del usuario mediante una interfaz a partir del lenguaje Python. 
@@ -60,10 +51,20 @@
 		
 		Para filtrar la búsqueda de la información necesaria para poder realizar el proyecto, se procedió a una búsqueda sistematizada de evidencia siguiendo los criterios de inclusión, por ejemplo, artículos, libros, tesis, publicadas desde el año 1990 hasta la actualidad, información relacionada a como crear una interfaz en el lenguaje de programación Python, información del funcionamiento y características de la frecuencia cardiaca. 
 		
-		En esta sección se elabora una revisión bibliográfica de los conceptos generales a partir de los cuales se sustenta este proyecto, los conceptos a considerar son: señales biomédicas, interfaz, base de datos, front-end, back-end, lenguaje de programación Python, frecuencia cardiaca. 	
+		En esta sección se elabora una revisión bibliográfica de los conceptos generales a partir de los cuales se sustenta este proyecto, los conceptos a considerar son: señales biomédicas, interfaz, base de datos, front-end, back-end, lenguaje de programación Python, frecuencia cardiaca.
+		\cite{monografias}
+		\cite{rae_interfaz}
+		\cite{FrontendBackend}
+		\cite{unam} 
+		\cite{elsevierRecuperacinFrecuencia}
+		\cite{uniriojaSistemaMonitorizacin}
+			
 	\section{Metodología.}
 	Se utilizará el programa Python, con la librería “TkInter” se diseñarán los algoritmos para el despliegue de las gráficas de pulso cardiaco. \\
 	Para la obtención de las señales cardiacas se utilizará un sensor” Max 30100” y una placa arduino uno con el cual se medirá el pulso cardiaco de una persona para posteriormente guardarlo en un archivo “.txt” y en un archivo Excel, dicho archivo pasará por un filtro realizado por nuestros compañeros de instrumentación electrónica para así entregarnos una señal legible y más limpia, con esto podremos hacer la interfaz en Python.
+	
+	
+	
 	\printbibliography
 %\begin{abstract}
 %\end{abstract}
