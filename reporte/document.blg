@@ -1,14 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [1] Config.pm:310> INFO - Logfile is 'document.blg'
-[212] biber-MSWIN64:340> INFO - === 
-[294] Biber.pm:419> INFO - Reading 'document.bcf'
-[487] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[517] Biber.pm:4419> INFO - Processing section 0
-[537] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografía.bib' for section 0
-[652] bibtex.pm:1713> INFO - LaTeX decoding ...
-[669] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografía.bib'
-[717] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[717] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[717] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
-[725] bbl.pm:660> INFO - Writing 'document.bbl' with encoding 'UTF-8'
-[727] bbl.pm:763> INFO - Output to document.bbl
+[234] biber-MSWIN64:340> INFO - === 
+[299] Biber.pm:419> INFO - Reading 'document.bcf'
+[477] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
+[504] Biber.pm:4419> INFO - Processing section 0
+[523] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografía.bib' for section 0
+[617] bibtex.pm:1713> INFO - LaTeX decoding ...
+[662] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografía.bib'
+[820] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[820] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[820] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[840] bbl.pm:660> INFO - Writing 'document.bbl' with encoding 'UTF-8'
+[844] bbl.pm:763> INFO - Output to document.bbl
+[844] Biber.pm:131> WARN - I didn't find a database entry for crossref '10.4067/S0034-98872001000800016' in entry 'biomedica_s' - ignoring (section 0)
+[845] Biber.pm:133> INFO - WARNINGS: 1

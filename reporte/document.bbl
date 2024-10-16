@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{python3}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.python.org/es/3/}}
+      \field{note}{[Accessed 15-10-2024]}
+      \field{title}{3.13.0 {D}ocumentation --- docs.python.org}
+    \endentry
+    \entry{SQL}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=086ec1f611b2f79bf24ba83c6ea1492c}{%
+           family={Datademia},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \strng{fullhash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \strng{bibnamehash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \strng{authorbibnamehash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \strng{authornamehash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \strng{authorfullhash}{086ec1f611b2f79bf24ba83c6ea1492c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://datademia.es/blog/que-es-sql}}
+      \field{note}{[Accessed 16-10-2024]}
+      \field{title}{¿{Q}ué es {S}{Q}{L}? - {D}atademia --- datademia.es}
+    \endentry
     \entry{FrontendBackend}{misc}{}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
@@ -27,33 +55,53 @@
       \field{note}{[Accessed 11-10-2024]}
       \field{title}{{F}rontend y backend: ¿{Q}ué son y cuáles son sus diferencias? --- gluo.mx}
     \endentry
-    \entry{uniriojaSistemaMonitorizacin}{misc}{}
+    \entry{FrecuenciaCardiaca}{misc}{}
       \name{author}{1}{}{%
-        {{hash=4abf0bfcc7cfff39ce0c121c31fc1e16}{%
-           family={https://dialnet.unirioja.es/servlet/autor?codigo=3660807},
-           familyi={h\bibinitperiod}}}%
+        {{hash=1f85ca72d95ae7082ab6c303df48679c}{%
+           family={fundaciondelcorazon},
+           familyi={f\bibinitperiod}}}%
       }
-      \strng{namehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \strng{fullhash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \strng{bibnamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \strng{authorbibnamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \strng{authornamehash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \strng{authorfullhash}{4abf0bfcc7cfff39ce0c121c31fc1e16}
-      \field{sortinit}{h}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \strng{namehash}{1f85ca72d95ae7082ab6c303df48679c}
+      \strng{fullhash}{1f85ca72d95ae7082ab6c303df48679c}
+      \strng{bibnamehash}{1f85ca72d95ae7082ab6c303df48679c}
+      \strng{authorbibnamehash}{1f85ca72d95ae7082ab6c303df48679c}
+      \strng{authornamehash}{1f85ca72d95ae7082ab6c303df48679c}
+      \strng{authorfullhash}{1f85ca72d95ae7082ab6c303df48679c}
+      \field{sortinit}{f}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://dialnet.unirioja.es/servlet/articulo?codigo=5038480}}
-      \field{note}{[Accessed 11-10-2024]}
-      \field{title}{{S}istema de monitorización remoto de señales biomédicas vía celular --- dialnet.unirioja.es}
+      \field{howpublished}{\url{https://fundaciondelcorazon.com/prevencion/marcadores-de-riesgo/frecuencia-cardiaca.html}}
+      \field{note}{[Accessed 16-10-2024]}
+      \field{title}{{F}recuencia cardiaca --- fundaciondelcorazon.com}
     \endentry
-    \entry{unam}{misc}{}
-      \field{sortinit}{p}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+    \entry{tkinter}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://www.ptolomeo.unam.mx:8080/xmlui/bitstream/handle/132.248.52.100/219/A6.pdf?sequence=6}}
-      \field{note}{[Accessed 11-10-2024]}
-      \field{title}{ptolomeo.unam.mx}
+      \field{howpublished}{\url{https://docs.python.org/es/3/library/tk.html}}
+      \field{note}{[Accessed 15-10-2024]}
+      \field{title}{{I}nterfaces gráficas de usuario con {T}k --- docs.python.org}
+    \endentry
+    \entry{BaseDDatos}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.oracle.com/mx/database/what-is-database/}}
+      \field{note}{[Accessed 16-10-2024]}
+      \field{title}{¿Qué es una base de datos?}
     \endentry
     \entry{rae_interfaz}{misc}{}
       \name{author}{1}{}{%
@@ -75,35 +123,57 @@
       \field{note}{[Accessed 11-10-2024]}
       \field{title}{interfaz | {D}iccionario de la lengua española --- dle.rae.es}
     \endentry
-    \entry{elsevierRecuperacinFrecuencia}{misc}{}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+    \entry{Seaborn}{misc}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.elsevier.es/en-revista-revista-andaluza-medicina-del-deporte-284-articulo-recuperacion-frecuencia-cardiaca-ventilacion-su-X1888754609428661}}
-      \field{note}{[Accessed 11-10-2024]}
-      \field{title}{{R}ecuperación de la frecuencia cardiaca y ventilación, y su relación con la lactacidemia, tras una prueba de esfuerzo en jóvenes deportistas --- elsevier.es}
+      \field{howpublished}{\url{https://seaborn.pydata.org/}}
+      \field{note}{[Accessed 16-10-2024]}
+      \field{title}{seaborn: statistical data visualization seaborn 0.13.2 documentation --- seaborn.pydata.org}
     \endentry
-    \entry{monografias}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=bc8136466963bf8e85853e0b59a972ad}{%
-           family={Saldana},
-           familyi={S\bibinitperiod},
-           given={Paul},
+    \entry{biomedica_s}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c7e7926bf3db4ca2e56ad38b5805b137}{%
+           family={Vivaldi\bibnamedelima V},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Ennio\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=195df4f0e75658cfa4ae9ce447580a34}{%
+           family={Maldonado\bibnamedelima A},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Pedro},
            giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{bc8136466963bf8e85853e0b59a972ad}
-      \strng{fullhash}{bc8136466963bf8e85853e0b59a972ad}
-      \strng{bibnamehash}{bc8136466963bf8e85853e0b59a972ad}
-      \strng{authorbibnamehash}{bc8136466963bf8e85853e0b59a972ad}
-      \strng{authornamehash}{bc8136466963bf8e85853e0b59a972ad}
-      \strng{authorfullhash}{bc8136466963bf8e85853e0b59a972ad}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \list{language}{1}{%
+        {es}%
+      }
+      \list{publisher}{1}{%
+        {scielocl}%
+      }
+      \strng{namehash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \strng{fullhash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \strng{bibnamehash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \strng{authorbibnamehash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \strng{authornamehash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \strng{authorfullhash}{5718cd846e1e4a60634bb7c9cf009c93}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.monografias.com/trabajos88/procesamiento-senales-biomedicas-electrocardiogramas-y-electroencefalogramas/procesamiento-senales-biomedicas-electrocardiogramas-y-electroencefalogramas}}
-      \field{note}{[Accessed 11-10-2024]}
-      \field{title}{{P}rocesamiento de señales biomédicas en electrocardiogramas y electroencefalogramas --- monografias.com}
+      \field{issn}{0034-9887}
+      \field{journaltitle}{{Revista mÃ\copyrightdica de Chile}}
+      \field{month}{08}
+      \field{title}{{Computadores en investigaciÃ\textthreesuperiorn biomÃ\copyrightdica: I. AnÃ!`lisis de seÃ\pmales bioelÃ\copyrightctricas}}
+      \field{volume}{129}
+      \field{year}{2001}
+      \field{pages}{955\bibrangedash 962}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0034-98872001000800016&nrm=iso
+      \endverb
+      \verb{url}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0034-98872001000800016&nrm=iso
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
