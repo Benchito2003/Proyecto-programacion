@@ -41,4 +41,4 @@ start.pack()
 stop = tk.Button(root, text="Stop", command=stop_animation)
 stop.pack()
 
-root.mainloop
+root.mainloop()
