@@ -4,7 +4,7 @@ from PIL import Image
 root = tk.Tk()
 root.title("Displaing Gif")
 
-file = "Rain.gif"
+file = "recursos/Rain.gif"
 info = Image.open(file)
 
 frames = info.n_frames # number of frames
