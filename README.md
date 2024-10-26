@@ -36,3 +36,5 @@ deactivate
 ## Documentación
 ### Custom Tkinter
 - https://customtkinter.tomschimansky.com/documentation/
+### tkinter
+- https://docs.python.org/es/3/library/tk.html
