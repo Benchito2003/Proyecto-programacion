@@ -1,3 +1,5 @@
+# Rama con todo y entorno 
+
 ## Funcionalidades a añadir:
 - Calcular moda, mediana, y media aritmética de un conjunto de registros
 - Añadir funcionalidad de poder calcular la recuperación cardiaca
@@ -9,10 +11,27 @@ Para poder todas las librerias necesarias de putazo ejecutar el siguiente comand
 
 ```python
 pip install -r requirements.txt
-
-
 ```
 
+## crear y activar entornos en python:
+crear un entorno:
+```python
+python -m venv <nombre-entorno>
+```
+
+Activar un entorno:
+```python
+# windows
+<nombre-entorno>\Scripts\activate
+
+#Unix
+source <nombre-entorno>/bin/activate
+```
+
+Desactivar un entorno:
+```python
+deactivate
+```
 
 ## Documentación
 ### Custom Tkinter
