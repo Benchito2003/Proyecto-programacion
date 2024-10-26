@@ -1,4 +1,4 @@
-# Rama con todo y entorno 
+# Rama principal alfin sin el entorno :D
 
 ## Funcionalidades a añadir:
 - Calcular moda, mediana, y media aritmética de un conjunto de registros
