@@ -8,7 +8,7 @@ Para poder todas las librerias necesarias de putazo ejecutar el siguiente comand
 
 
 ```python
-pip install -r requirements.
+pip install -r requirements.txt
 
 
 ```
