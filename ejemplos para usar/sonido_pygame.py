@@ -20,7 +20,7 @@ pygame.mixer.init()
 
 # Define a function to play the music
 def play_sound():
-    pygame.mixer.music.load("/home/chino/Desktop/Proyecto-programacion/recursos/pou.wav")
+    pygame.mixer.music.load("/home/chino/Desktop/Proyecto-programacion/recursos/pou.wav") # nota, está muy limitado con mp3
     pygame.mixer.music.play()
 
 # Add a button widget
