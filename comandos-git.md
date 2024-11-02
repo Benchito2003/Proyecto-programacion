@@ -1,9 +1,9 @@
----Git---
-Cambiar nombre y correo:
+# Git
+## Cambiar nombre y correo:
 git config --global user.name "nombre" #para el nombre
 git config --global 
 
-Comandos de directorios:
+## Comandos de directorios:
 mkdir "nombre_directorio" #crear directorio
 touch fichero.txt #crear un fichero
 cd /<nombre-directorio> #moverte a un directorio
@@ -13,8 +13,8 @@ pwd #da la ubicación actual
 mv /<nombre-directorio> /<nuevo-nombre> #renombra un directorio
 mv /<nombre-directorio> /<nueva-ubiación>/ #mueve de lugar un directorio
 
-Guardar cambios:
-git add <nombre_fichero> #para Guardar cambios
+## Guardar cambios:
+git add <nombre_fichero> #para "Guardar" cambios
 git commit -m "nombre o descripción del cambio" #Crea un commit con los cambios guardados
 git log #vemos los commits hechos
 git log --graph #ahora podemos verlos en forma de gráfico
@@ -23,7 +23,7 @@ git status #vemos los cambios hechos desde el último commit
 git status -s #vemos los cambios de forma resumida
 git commit --amend #Permite modificar el último commit (desde cambiar el nombre, hasta intertarle los últimos cambios)
 
-Manipuación de ramas (branch):
+## Manipuación de ramas (branch):
 git branch <nombre-rama> #creamos una nueva rama
 git branch -m <nuevo-nombre> #reenombrar la rama actual
 git branch -m <nombre-rama> nuevo-nombre #reenombrar una rama específica
@@ -33,7 +33,7 @@ git switch -c <nombre-rama> #creamos una rama y además nos movemos a ella
 git branch -d <nombre-rama> #borramos una rama (muy importante no estar en ella)
 git merge <nombre-rama-externa> #Traemos lo cabios de una rama externa hacia la rama en donde estamos actualmente
 
-Borrar cambios
+## Borrar cambios:
 git reset --hard #"Borramos" hasta nuestro último commit
 git reset --hard <commit-id> #"Borramos" todo hasta el commit con el id seleccionado (los primeros 5 caracteres del id)
 #Nota: realmente no estamos "borrando" los commits, solo estamos "regresando" a un commmit e ignorando los futuros, sin embargo pueden ser recuperados desde el historial
@@ -41,16 +41,16 @@ git reflog #accedemos al historial
 git reset --soft <commit-id> #Guardamos todos los cambios y nos regresamos hasta el commit con el id seleccionado
 git reset --mixed <commit-id> #Dejamos sin guardar los cambios y nos regresamos al commir con el id seleccioonado
 
-Restaurar cambios
+## Restaurar cambios
 git restore <nombre-archivo-borrado> #Restauramos un archivo borrado como lo teniamos guardado hasta el último "guardado" (tiene que haber sido guardado antes con add)
 git checkout <nombre-archivo> #Regresa un archivo a su versión del último "guardado" (con el comando add)
 
-Atajos:
-git config --global alias.nombre-alias "(función a la que queremos llamar)"
+## Atajos:
+git config --global alias.nombre-alias "función a la que queremos llamar"
 
----Github---
-#primera vez
-git remote add origin <url del repositorio remot>o #añadimos un "origin" a nuestro git (lo vinculamos a un repositorio remoto)
+# Github
+## primera vez
+git remote add origin <url repositorio-remoto> #añadimos un "origin" a nuestro git (lo vinculamos a un repositorio remoto)
 git remote remove origin #eliminamos su origin si es que tiene uno
 git push -u origin <rama-principal> #vinculamos el comando git push con la rama principal para empezar a hacer nuestros push (de manera que ya no tengamos que especificar la rama a subir entra cada actaulización)
 
@@ -60,4 +60,3 @@ git push #subimos al repositorio remoto nuestro repositorio local
 git fecth #nos trae el repositorio remoto al local pero en forma de rama para poder checar los cambios antes de aplicarles un merge
 git switch --detach origin/rama-github #nos cambiamos a la rama que trajimos para poder ver esos cambios
 git switch <rama-principal> #regresamos a nuestra rama principal para poder hacer el push
-
