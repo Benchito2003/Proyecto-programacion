@@ -9,7 +9,7 @@ Alfonso Gamboa Rubén
 '''
 
 import tkinter as Tk
-import customtkinter as CTk
+from customtkinter import CTk
 import colores as col
 
 #Colores escogidos
