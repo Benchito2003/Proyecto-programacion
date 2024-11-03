@@ -17,6 +17,7 @@ mv /<nombre-directorio> /<nueva-ubiación>/ #mueve de lugar un directorio
 git add <nombre_fichero> #para "Guardar" cambios
 git commit -m "nombre o descripción del cambio" #Crea un commit con los cambios guardados
 git log #vemos los commits hechos
+git log --oneline #vemos los logs pero en forma de una sola linea
 git log --graph #ahora podemos verlos en forma de gráfico
 git log --graph --oneline #lo mismo que el anterior pero más compacto
 git status #vemos los cambios hechos desde el último commit
@@ -30,6 +31,7 @@ git branch -m <nombre-rama> nuevo-nombre #reenombrar una rama específica
 git branch #nos enseña las ramas actuales y nos muestra en cual estamos
 git switch <nueva-rama> #cambiamos de rama 
 git switch -c <nombre-rama> #creamos una rama y además nos movemos a ella
+git checkout -b <nombre-rama> #creamos una rama y además nos movemos a ella
 git branch -d <nombre-rama> #borramos una rama (muy importante no estar en ella)
 git merge <nombre-rama-externa> #Traemos lo cabios de una rama externa hacia la rama en donde estamos actualmente
 
@@ -44,6 +46,8 @@ git reset --mixed <commit-id> #Dejamos sin guardar los cambios y nos regresamos 
 ## Restaurar cambios
 git restore <nombre-archivo-borrado> #Restauramos un archivo borrado como lo teniamos guardado hasta el último "guardado" (tiene que haber sido guardado antes con add)
 git checkout <nombre-archivo> #Regresa un archivo a su versión del último "guardado" (con el comando add)
+git checkout <commit-id> #Restaura todo hasta la versión del commit con el id seleccionado (movemos el HEAD a dicho commit)
+git checkout <nombre-rama> #Restaura todo a la ULTIMA versión de la rama (podemos usarlo para regresar el HEAD al MASTER)
 
 ## Atajos:
 git config --global alias.nombre-alias "función a la que queremos llamar"
