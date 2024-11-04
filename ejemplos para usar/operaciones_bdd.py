@@ -15,3 +15,19 @@ for person in sample_data:
     cursor.execute("Insert INTO people(name, age) VALUES (?,?)", person)
 
 conn.commit()
+
+# retribe unique records by removing duplicates from a dataset. 
+# you can ise the DISTINCT
+
+select_distinct_query = "SELECT DISTINCT age FROM people"
+for row in cursor.execute(select_distinct_query):
+    print(row)
+
+count_distinct_query = "SELECT COUNT(DISTINCT age) FROM people"
+cursor.execute(count_distinct_query)
+result = cursor.fetchone()
+print("Number of distinct ages: ", result[0])
+
+group_by_query = "SELECT age, COUNT(DISTINCT name) FROM people GROUP BY age"
+for row in cursor.execute(group_by_query):
+    print(f"Age: {row[0]}, Distinct Names: {row[1]}")
