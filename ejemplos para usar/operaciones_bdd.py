@@ -7,7 +7,7 @@ conn = sqlite3.connect("sample.db")
 cursor = conn.cursor()
 
 # Create new table
-create_table_query = "query"
+create_table_query = "CREATE TABLE IF NOT EXISTS people(id INTEGER PRIMARY KEY, name TEXT NOT NULL, age INTEGER NOT NULL);"
 
 cursor.execute(create_table_query)
 # Insert sample data
