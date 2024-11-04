@@ -1,7 +1,17 @@
+altgraph==0.17.4
 customtkinter==5.2.2
 darkdetect==0.8.0
+mpg123==0.4
 numpy==2.1.2
 opencv-python==4.10.0.84
 packaging==24.1
+pandas==2.2.3
 pillow==11.0.0
+pygame==2.6.1
+pyinstaller==6.11.0
+pyinstaller-hooks-contrib==2024.9
+python-dateutil==2.9.0.post0
+pytz==2024.2
+six==1.16.0
 tk==0.1.0
+tzdata==2024.2
