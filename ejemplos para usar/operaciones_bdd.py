@@ -1,4 +1,5 @@
 # operaciones con bases de datos
+# NOTA: Estas manipulaciones son con una base de datos que hizo la amestra, por lo que estos comandos no nos funcionarán con nuestra propia base de datos, pero la maestra con gusto nos puede brindar los querys específicos que necesitamos
 import sqlite3
 
 # Connect to SQLite database (or create if it doesn't exist)
