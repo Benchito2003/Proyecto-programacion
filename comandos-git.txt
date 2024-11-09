@@ -44,7 +44,8 @@ git reset --mixed <commit-id> #Dejamos sin guardar los cambios y nos regresamos 
 Restaurar cambios
 git restore <nombre-archivo-borrado> #Restauramos un archivo borrado como lo teniamos guardado hasta el último "guardado" (tiene que haber sido guardado antes con add)
 git checkout <nombre-archivo> #Regresa un archivo a su versión del último "guardado" (con el comando add)
-
+git checkout <commit-id> #Restaura todo hasta la versión del commit con el id seleccionado (movemos el HEAD a dicho commit)
+git checkout <nombre-rama> #Restaura todo a la ULTIMA versión de la rama (podemos usarlo para regresar el HEAD al MASTER o para  cambiarnos a una rama que nos hayamos traido con fetch)
 Atajos:
 git config --global alias.nombre-alias "(función a la que queremos llamar)"
 
