@@ -1,9 +1,10 @@
 # Rama principal alfin sin el entorno :D
 
 ## Funcionalidades a añadir:
-- [] Crear una ventana para ingresar el nombre del usuario
-- [] Crear una ventana para añadir un nuevo usuario (capturar: Nombre, Apellido, fecha de nacimiento, y crearle un nombre de usuario)
-- [] Crear una base de datos o data frame con dos tablas: una para datos de usuario (con los datos capturados) y otra para las frecuencias cardiacas.  
+1. [ ] Crear una ventana para ingresar el nombre del usuario
+2. [ ] Crear una ventana para añadir un nuevo usuario (capturar: Nombre, Apellido, fecha de nacimiento, y crearle un nombre de usuario)
+3. [ ] Crear una base de datos o data frame con dos tablas: una para datos de usuario (con los datos capturados) y otra para las frecuencias cardiacas.
+4.  
 
 
 Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
