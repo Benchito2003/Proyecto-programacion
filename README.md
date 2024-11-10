@@ -1,5 +1,5 @@
 # Rama principal
-Esta rama esta diseñada como un filtro de cambios con la principal, 
+estas en la rama principal, cambiate a tu rama para hacer tus propios cambios
 
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
