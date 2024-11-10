@@ -1,4 +1,5 @@
-# Rama principal alfin sin el entorno :D
+# Rama de desarrollo
+Esta rama esta diseñada como un filtro de cambios con la principal, 
 
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
@@ -15,8 +16,24 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 ## Sugerencias:
 pueden editar esta sección del readme para dar sugerencias como: funcionalidades extra que se les hayan ocurrido, algun cambio de alguna venta, etc.
 
+## ¿Cómo instalar?
+1. Haz un  git clone de este repositorio con:
+```git 
+git clone <url-del-repositorio>
+```
+2.  Cambiate a tu rama (si no encuentras tu rama comunicate con Rubén para que te haga una)
+```git
+git checkout <nombre-de-tu-rama> 
+```
 
-## Ambinentes (el archivo ".venv" que ven en vscode)
+## Cómo subo mis cambios?
+Muy fácil: 
+```git
+git push 
+```
+*¿Si cometo un error arruinare el trabajo de los demás?*Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
+
+## Ambientes (el archivo ".venv" que ven en vscode)
 Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
 
 
