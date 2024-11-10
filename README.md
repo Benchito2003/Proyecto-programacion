@@ -1,5 +1,5 @@
 # Rama principal
-estas en la rama principal, cambiate a tu rama para hacer tus propios cambios
+estas en la rama principal, cambiate a tu rama para hacer tus propios cambios, checa la de desarrollo para más información
 
 
 ## crear y activar entornos en python:
