@@ -8,7 +8,7 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [ ] Crear una base de datos o un data frame (mejor trabajaremos con lo que veamos que es más cómodo) con dos tablas: una para datos de usuario (con los datos capturados) y otra para las frecuencias cardiacas.
 - [ ] Crear la ventana principal de nuestro programa (opciones para ver registros pasados, crear un nuevo registro, etc.)
 - [ ] Crear un programa que funcione de intermediario entre nuestra base de datos y los programas: que permita traer datos de la base de datos en forma de datos con los que podamos trabajar y que permita tambien subir a la base de datos los registros que tomemos. 
-- [ ] Hcaer un programa que permita hacer CRUD (Create, Read, Update, Delete)de forma sencilla con la base de datos
+- [ ] Hacer un programa que permita hacer CRUD (Create, Read, Update, Delete)de forma sencilla con la base de datos
 - [ ] Crear una ventana que para calcular media, moda y mediana de un conjunto de datos
 - [ ] Crear un progama que permita obtener datos de sensor (ya después con calma vemos si los mostramos en tiempo real)
 
