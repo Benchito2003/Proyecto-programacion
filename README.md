@@ -1,4 +1,4 @@
-# Rama de desarrollo
+# Rama principal
 Esta rama esta diseñada como un filtro de cambios con la principal, 
 
 ## Funcionalidades a añadir:
