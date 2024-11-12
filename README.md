@@ -26,12 +26,13 @@ pueden editar esta sección del readme para dar sugerencias como: funcionalidade
 git clone <url-del-repositorio>
 ```
 2.  Cambiate a tu rama (si no encuentras tu rama comunicate con Rubén para que te haga una)
-```git
-git checkout <nombre-de-tu-rama> 
-```
 ```git 
 git fetch
 ```
+```git
+git checkout <nombre-de-tu-rama> 
+```
+
 
 ## Cómo subo mis cambios?
 Muy fácil: 
