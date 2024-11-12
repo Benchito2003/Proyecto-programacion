@@ -23,6 +23,9 @@ pueden editar esta sección del readme para dar sugerencias como: funcionalidade
 ## ¿Cómo instalar?
 1. Haz un  git clone de este repositorio con:
 ```git 
+git fetch
+```
+```git 
 git clone <url-del-repositorio>
 ```
 2.  Cambiate a tu rama (si no encuentras tu rama comunicate con Rubén para que te haga una)
