@@ -11,6 +11,7 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [ ] Hacer un programa que permita hacer CRUD (Create, Read, Update, Delete)de forma sencilla con la base de datos
 - [ ] Crear una ventana que para calcular media, moda y mediana de un conjunto de datos
 - [ ] Crear un progama que permita obtener datos de sensor (ya después con calma vemos si los mostramos en tiempo real)
+- [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 
 ## Funcionalidades a aclarar:
 - ¿Que datos necesitamos del usuario?
@@ -26,9 +27,13 @@ pueden editar esta sección del readme para dar sugerencias como: funcionalidade
 git clone <url-del-repositorio>
 ```
 2.  Cambiate a tu rama (si no encuentras tu rama comunicate con Rubén para que te haga una)
+```git 
+git fetch
+```
 ```git
 git checkout <nombre-de-tu-rama> 
 ```
+
 
 ## Cómo subo mis cambios?
 Muy fácil: 
