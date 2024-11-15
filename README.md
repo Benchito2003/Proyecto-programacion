@@ -47,10 +47,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 ## Ambientes (el archivo ".venv" que ven en vscode)
 Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
 
-### instalar los modulos necesarios para el entorno
-```python
-pip install -r requirements.txt
-```
+
 
 ### crear y activar entornos en python:
 crear un entorno:
@@ -65,6 +62,10 @@ Activar un entorno:
 
 #Unix
 source <nombre-entorno>/bin/activate
+```
+### instalar los modulos necesarios para el entorno
+```python
+pip install -r requirements.txt
 ```
 
 Desactivar un entorno:
