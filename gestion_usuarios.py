@@ -1,6 +1,5 @@
 import customtkinter
 
-
 class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -26,7 +25,11 @@ class App(customtkinter.CTk):
         else:
             self.toplevel_window.focus()  # if window exists focus it
 
-
 if __name__ == "__main__":
     app = App()
     app.mainloop()
+
+""" 
+Código obtenido de:
+https://customtkinter.tomschimansky.com/documentation/windows/toplevels
+"""

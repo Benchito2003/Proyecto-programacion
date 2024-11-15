@@ -16,3 +16,4 @@ c_negro = "#000000" #Colores constantes
 c_blanco = "FFFFFF" #Colores constantes
 
 # Funcion con la ventana secundaria
+
