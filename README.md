@@ -48,7 +48,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 ### crear y activar entornos en python:
 crear un entorno:
 ```python
-python -m venv <nombre-entorno>
+python -m venv <nombre-entorno>  #es recomendable que se llame ".venv"
 ```
 
 Activar un entorno:
