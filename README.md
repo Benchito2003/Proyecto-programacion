@@ -59,16 +59,17 @@ Activar un entorno:
 #Unix
 source <nombre-entorno>/bin/activate
 ```
+
+Desactivar un entorno:
+```python
+deactivate
+```
 ### instalar los modulos necesarios para el entorno
 Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
 ```python
 pip install -r requirements.txt
 ```
 
-Desactivar un entorno:
-```python
-deactivate
-```
 
 ## Documentación
 ### Custom Tkinter
