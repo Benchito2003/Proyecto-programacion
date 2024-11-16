@@ -1,5 +1,6 @@
 import customtkinter
 
+# Clase de la ventana nueva
 class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -8,7 +9,7 @@ class ToplevelWindow(customtkinter.CTkToplevel):
         self.label = customtkinter.CTkLabel(self, text="ToplevelWindow")
         self.label.pack(padx=20, pady=20)
 
-
+# Ejemplo de introducir la ventana nueva dentro de la ventana principal
 class App(customtkinter.CTk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -30,6 +31,6 @@ if __name__ == "__main__":
     app.mainloop()
 
 """ 
-Código obtenido de:
+Código inspirado de:
 https://customtkinter.tomschimansky.com/documentation/windows/toplevels
 """

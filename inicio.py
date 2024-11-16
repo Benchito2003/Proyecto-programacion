@@ -6,6 +6,9 @@ El samy
 El García²
 El Aleks
 Alfonso Gamboa Rubén
+
+La ventana de inicio aunque suene irónico, es la ventana main, que es la que se va a ejecutar, por lo ésta organiza y llama al resto
+
 '''
 
 import tkinter as Tk

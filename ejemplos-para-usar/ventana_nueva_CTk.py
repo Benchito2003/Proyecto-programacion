@@ -1,25 +1,7 @@
-# ventana para capturar los respectivos datos
-# Nota: ver como trabajar con esta ventana como objeto
-
-import tkinter as Tk
-from customtkinter import CTk, CTkFrame, CTkEntry
-import colores as col
-
-# Colores escogidos
-paleta = col.paleta2
-c1 = paleta[0] # Para el fondo
-c2 = paleta[1] # Iconos 1
-c3 = paleta[2] # Iconos 2
-c4 = paleta[3] # para los marcos 
-c5 = paleta[4] # Para las letras (contraste del fondo)
-c_negro = "#000000" #Colores constantes
-c_blanco = "FFFFFF" #Colores constantes
-
-
 import customtkinter
 
 
-# Ventana para capturar datos ya encapsulada como una clase
+# Características de la ventana
 class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -38,11 +20,10 @@ class App(customtkinter.CTk):
         self.button_1.pack(side="top", padx=20, pady=20)
 
         self.toplevel_window = None
-    
-    # Nuestro necesitará su propia función para invocar a la toma de datos
-    def open_toplevel(self): # En la aplicación principal podemos llamarla como queramos
+
+    def open_toplevel(self):
         if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
-            self.toplevel_window = ToplevelWindow(self)  # Creamos el objeto si no había sido creado antes
+            self.toplevel_window = ToplevelWindow(self)  # create window if its None or destroyed
         else:
             self.toplevel_window.focus()  # if window exists focus it
 
