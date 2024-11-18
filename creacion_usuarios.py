@@ -1,34 +1,31 @@
-# ventana para capturar los respectivos datos
-# Nota: ver como trabajar con esta ventana como objeto
+# Importamos al papá de todas nuestras librerías
+import customtkinter
 
-import tkinter as Tk
-from customtkinter import CTk, CTkFrame, CTkEntry
+#Importar módulos propios:
 import colores as col
 
 # Colores escogidos
-paleta = col.paleta2
+paleta = col.paleta1
 c1 = paleta[0] # Para el fondo
 c2 = paleta[1] # Iconos 1
 c3 = paleta[2] # Iconos 2
-c4 = paleta[3] # para los marcos 
+c4 = paleta[3] # para los marcos
 c5 = paleta[4] # Para las letras (contraste del fondo)
 c_negro = "#000000" #Colores constantes
 c_blanco = "FFFFFF" #Colores constantes
 
 
-import customtkinter
 
-
-# Ventana para capturar datos ya encapsulada como una clase
-class ToplevelWindow(customtkinter.CTkToplevel):
+# Clase de la ventana nueva
+class V_nuevo_usuario(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.geometry("400x300")
 
-        self.label = customtkinter.CTkLabel(self, text="ToplevelWindow")
+        self.label = customtkinter.CTkLabel(self, text="Ventana de cración de usuarios")
         self.label.pack(padx=20, pady=20)
 
-# Obvio hay que probar que la ventana funcione correctamente: Sitio de pruebas pues
+# Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
 class App(customtkinter.CTk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -38,11 +35,10 @@ class App(customtkinter.CTk):
         self.button_1.pack(side="top", padx=20, pady=20)
 
         self.toplevel_window = None
-    
-    # Nuestro necesitará su propia función para invocar a la toma de datos
-    def open_toplevel(self): # En la aplicación principal podemos llamarla como queramos
+
+    def open_toplevel(self):
         if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
-            self.toplevel_window = ToplevelWindow(self)  # Creamos el objeto si no había sido creado antes
+            self.toplevel_window = V_nuevo_usuario(self)  # create window if its None or destroyed
         else:
             self.toplevel_window.focus()  # if window exists focus it
 
@@ -51,6 +47,6 @@ if __name__ == "__main__":
     app.mainloop()
 
 """ 
-Código obtenido de:
+Código inspirado de:
 https://customtkinter.tomschimansky.com/documentation/windows/toplevels
 """
