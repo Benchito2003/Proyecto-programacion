@@ -51,23 +51,28 @@ class V_inicio(CTk):
         
         # Widgets marco 1
         ## Etiqueta usuario
-        self.l_usuario = CTkLabel(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c1, text_color=c4, text="Usuario: ")
+        # self.l_usuario = CTkLabel(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c1, text_color=c4, text="Usuario: ")
+        self.l_usuario = CustomLabel(self.marco1, text="Usuario:")
         self.l_usuario.grid(column=0, row=1, padx=4, pady=4)
 
         ## Entrada de usuario
-        self.e_usuario = CTkEntry(self.marco1,font=(fuente, t_fuente), bg_color=c1, fg_color= c1, text_color=c4, placeholder_text="Ingresar usuario", border_color=c4)
+        # self.e_usuario = CTkEntry(self.marco1,font=(fuente, t_fuente), bg_color=c1, fg_color= c1, text_color=c4, placeholder_text="Ingresar usuario", border_color=c4)
+        self.e_usuario = CustomEntry(self.marco1, placeholder_text="Ingresar usuario")
         self.e_usuario.grid(column=1, row=1, padx=4, pady=4) # Se va a colocar en la primera fila
 
         ## Boton crear usuario
-        self.b_crear_usuario = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="Nuevo usuario", border_color=c4, command=lambda: f.abrir_ventana(self, creacion_usuarios.V_nuevo_usuario))
+        # self.b_crear_usuario = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="Nuevo usuario", border_color=c4, command=lambda: f.abrir_ventana(self, creacion_usuarios.V_nuevo_usuario))
+        self.b_crear_usuario = CustomButton(self.marco1, text="Nuevo usuario", command=lambda: f.abrir_ventana(self, creacion_usuarios.V_nuevo_usuario))
         self.b_crear_usuario.grid(column=0, row=2, padx=4, pady=4)
 
         ## Boton para entrar
-        self.b_entrar = CTkButton(self.marco1, bg_color=c1, font=(fuente, t_fuente), fg_color=c4, text_color=c1, text="Entrar", border_color=c4, command=lambda: f.mostrar_frame(self.marco2))
+        # self.b_entrar = CTkButton(self.marco1, bg_color=c1, font=(fuente, t_fuente), fg_color=c4, text_color=c1, text="Entrar", border_color=c4, command=lambda: f.mostrar_frame(self.marco2))
+        self.b_entrar = CustomButton(self.marco1, text="Entrar", command=lambda: f.mostrar_frame(self.marco2))
         self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
 
         ## Botón para cerrar
-        self.b_cerrar = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="salir de la aplicación", border_color=c4, command= lambda: f.cerrar_ventana(self))
+        # self.b_cerrar = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="salir de la aplicación", border_color=c4, command= lambda: f.cerrar_ventana(self))
+        self.b_cerrar = CustomButton(self, text="Salir de la aplicación", command= lambda: f.cerrar_ventana(self))
         self.b_cerrar.grid(columnspan=2, row=3, padx=4, pady=4) 
 
 # Main
