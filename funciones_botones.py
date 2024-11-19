@@ -1,5 +1,6 @@
 
 # Para guardar las funciones de los botones y no repetir código
+# Aclaración: no es necesario poner aqui todas las funciones, solo las que probablemente se vana a repetir en todas las ventanas, como la función de cerrar ventanas
 import customtkinter
 
 def cerrar_ventana(ventana_a_cerrar):
