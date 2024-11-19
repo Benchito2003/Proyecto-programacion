@@ -1,6 +1,7 @@
 import customtkinter
 
 
+# Características de la ventana
 class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -9,7 +10,7 @@ class ToplevelWindow(customtkinter.CTkToplevel):
         self.label = customtkinter.CTkLabel(self, text="ToplevelWindow")
         self.label.pack(padx=20, pady=20)
 
-
+# Obvio hay que probar que la ventana funcione correctamente: Sitio de pruebas pues
 class App(customtkinter.CTk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -26,7 +27,11 @@ class App(customtkinter.CTk):
         else:
             self.toplevel_window.focus()  # if window exists focus it
 
-
 if __name__ == "__main__":
     app = App()
     app.mainloop()
+
+""" 
+Código obtenido de:
+https://customtkinter.tomschimansky.com/documentation/windows/toplevels
+"""

@@ -6,44 +6,73 @@ El samy
 El García²
 El Aleks
 Alfonso Gamboa Rubén
+
+La ventana de inicio aunque suene irónico, es la ventana main, que es la que se va a ejecutar, por lo ésta organiza y llama al resto
+
 '''
 
 import tkinter as Tk
-from customtkinter import CTk, CTkFrame, CTkEntry
-import colores as col
+from customtkinter import CTk, CTkFrame, CTkEntry, CTkButton, CTkLabel
 
-# Colores escogidos
-paleta = col.paleta2
-c1 = paleta[0] # Para el fondo
-c2 = paleta[1] # Iconos 1
-c3 = paleta[2] # Iconos 2
-c4 = paleta[3] # para los marcos
-c5 = paleta[4] # Para las letras
-c_negro = "#000000" #Colores constantes
-c_blanco = "FFFFFF" #Colores constantes
+
+#Importar módulos propios:
+import creacion_usuarios
+import funciones_botones as f
+import principal
+from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
+
 
 # Ventana principal
-v_principal = CTk() # En este caso va a ser un objeto de custom tkinter (para colores y diseños chidos)
-v_principal.geometry("960x540") # Geometría a libre albedrío
-v_principal.minsize(320, 540) #tamaño mínimo para que no pasen cosas extrañas ;)
-v_principal.config(bg = c1)
+class V_inicio(CTk):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Popiedades de la ventana
+        self.geometry("400x200")  # Geometría (Aun puede ser cambiada)
+        # self.minsize(320, 540) # tamaño mínimo para que no pasen cosas extrañas ;)
+        self.config(bg = c1) # Un color de fondo
+        self.title("Life Rhythm")
 
-## configuración de filas y columnas para toda la ventana principal, permitiendonos centrar el contenido sin importar el tamaño de la ventana
-v_principal.columnconfigure(0, weight=1)
-v_principal.rowconfigure(0, weight=1)
+        ## configuración de filas y columnas para toda la ventana principal, permitiendonos centrar el contenido sin importar el tamaño de la ventana
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(0, weight=1)
 
-# marcos
-## marco 1
-marco1 = CTkFrame(v_principal, fg_color=c1, bg_color=c1) #le ponemos el mismo color que el de fondo de pantalla
-marco1.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
-### configuración de columnas y ventanas del marco
-marco1.columnconfigure([0, 1], weight=1)
-marco1.rowconfigure([0,1,2,3,4,5], weight=1) 
+        self.ventana_abierta = None # Variable que nos ayudadrá a saber si ya hay abierta una ventana nueva
 
 
-#Entrada de nombre
-e_nombre = CTkEntry(marco1,font=("sans rerif", 14), bg_color=c1, fg_color= c1, text_color=c4, placeholder_text="Nombre", border_color=c4)
-e_nombre.grid(columnspan=2, row=1, padx=4, pady=4) # Se va a colocar en la primera fila
+        # marcos
+        ## marco 1: ingreso de usuario
+        self.marco1 = CTkFrame(self, fg_color=c1, bg_color=c1) #le ponemos el mismo color que el de fondo de pantalla
+        self.marco1.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
+        ### configuración de columnas y ventanas del marco
+        self.marco1.columnconfigure([0, 1], weight=1)
+        self.marco1.rowconfigure([0,1,2,3,4,5], weight=1) 
+        ## marco 2: marco de la ventana principal
+        self.marco2 = principal.V_principal(master=self) #le ponemos el mismo color que el de fondo de pantalla
+        
+        # Widgets marco 1
+        ## Etiqueta usuario
+        self.l_usuario = CTkLabel(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c1, text_color=c4, text="Usuario: ")
+        self.l_usuario.grid(column=0, row=1, padx=4, pady=4)
 
+        ## Entrada de usuario
+        self.e_usuario = CTkEntry(self.marco1,font=(fuente, t_fuente), bg_color=c1, fg_color= c1, text_color=c4, placeholder_text="Ingresar usuario", border_color=c4)
+        self.e_usuario.grid(column=1, row=1, padx=4, pady=4) # Se va a colocar en la primera fila
 
-v_principal.mainloop()
+        ## Boton crear usuario
+        self.b_crear_usuario = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="Nuevo usuario", border_color=c4, command=lambda: f.abrir_ventana(self, creacion_usuarios.V_nuevo_usuario))
+        self.b_crear_usuario.grid(column=0, row=2, padx=4, pady=4)
+
+        ## Boton para entrar
+        self.b_entrar = CTkButton(self.marco1, bg_color=c1, font=(fuente, t_fuente), fg_color=c4, text_color=c1, text="Entrar", border_color=c4, command=lambda: f.mostrar_frame(self.marco2))
+        self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
+
+        ## Botón para cerrar
+        self.b_cerrar = CTkButton(self.marco1, font=(fuente, t_fuente), bg_color=c1, fg_color=c4, text_color=c1, text="salir de la aplicación", border_color=c4, command= lambda: f.cerrar_ventana(self))
+        self.b_cerrar.grid(columnspan=2, row=3, padx=4, pady=4) 
+
+# Main
+
+if __name__ == "__main__":
+    inicio = V_inicio()
+    inicio.mainloop()
+
