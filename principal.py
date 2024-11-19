@@ -23,13 +23,15 @@ class V_principal(customtkinter.CTkFrame):
         ## Botón de nuevo registro
         self.b_nuevo = CustomButton(self, text="Nuevo registro")
         self.b_nuevo.grid(row=1, column=0, padx=4, pady=4)
-        ## Botón para
+        ## Botón para prueba de esfuerzo
+        self.b_esfuerzo = CustomButton(self, text="Prueba de esfuerzo")
+        self.b_esfuerzo.grid(row=1, column=1, padx=4, pady=4)
         ## Botón para ver registros
         self.b_ver = CustomButton(self, text="Ver registros")
         self.b_ver.grid(row=1, column=2, padx=4,pady=4)
         ## Botón para salir
         self.b_salida = CustomButton(self, text="Salir de la aplicación", command=lambda: f.cerrar_ventana(self))
-        self.b_salida.grid(row=2, column=2, padx=20, pady=20)
+        self.b_salida.grid(row=4, column=2, padx=4, pady=4)
 
 
 # Aqui podemos probar que el marco funcione correctamente y sin errores:

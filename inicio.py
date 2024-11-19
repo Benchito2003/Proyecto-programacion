@@ -27,7 +27,7 @@ class V_inicio(CTk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Popiedades de la ventana
-        self.geometry("400x200")  # Geometría (Aun puede ser cambiada)
+        self.geometry("500x200")  # Geometría (Aun puede ser cambiada)
         # self.minsize(320, 540) # tamaño mínimo para que no pasen cosas extrañas ;)
         self.config(bg = c1) # Un color de fondo
         self.title("Life Rhythm")
