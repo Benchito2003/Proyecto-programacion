@@ -1,6 +1,6 @@
 """ 
-Ps, yo creo que mejor le hacemos su propia ventana a la aplicación principal
-Código creado por: Rubén ebrio a las 4am ;)
+Frame principal: Este es el frame donde se crean nuevos registros, se ven los registros previos y
+donde se puede hacer la prueba de esfuerzo
 Documentación: https://customtkinter.tomschimansky.com/documentation/widgets/frames
 """
 import customtkinter
