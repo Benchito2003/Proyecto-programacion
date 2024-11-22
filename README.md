@@ -1,6 +1,5 @@
-# Rama de desarrollo
-Esta rama esta diseñada como un filtro de cambios con la principal, 
-
+# Rama principal
+estas en la rama principal, cambiate a tu rama para hacer tus propios cambios, checa la de desarrollo para más información
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
 - [x] Crear una ventana para ingresar el nombre del usuario
@@ -42,7 +41,6 @@ Muy fácil:
 git push 
 ```
 Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en contraseña pegan la llave de github que les mandé.
-
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)

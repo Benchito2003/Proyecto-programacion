@@ -1,7 +1,7 @@
 # Git
 ## Cambiar nombre y correo:
 git config --global user.name "nombre" #para el nombre
-git config --global 
+git config --global user.email "correo" #ps para el correo
 
 ## Comandos de directorios:
 mkdir "nombre_directorio" #crear directorio
