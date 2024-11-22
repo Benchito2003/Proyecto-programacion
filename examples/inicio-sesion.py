@@ -25,7 +25,7 @@ root.config(bg = c_negro) #Cambio de color del background
 logo = PhotoImage(file = "recursos/Starbucks-Logo-600x338.png")
 # subida = PhotoImage(file="recursos/cloud-upload-alt (2).png")
 fondo = CTkImage(light_image=Image.open("recursos/Starbucks-Logo-600x338.png"), dark_image=Image.open("recursos/Starbucks-Logo-600x338.png"), size=(425, 250))
-subida = CTkImage(light_image=Image.open("recursos/cloud-upload-alt (2).png"), dark_image=Image.open("recursos/cloud-upload-alt (2).png"), size=(30, 30))
+subida = CTkImage(light_image=Image.open("recursos/iconos/cloud-upload-alt (2).png"), dark_image=Image.open("recursos/iconos/cloud-upload-alt (2).png"), size=(30, 30))
 
 
 
@@ -38,7 +38,7 @@ frame.rowconfigure([0,1,2,3,4,5], weight=1)
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-CTkLabel(frame, image=fondo, text="",fg_color="transparent", bg_color="transparent").grid(columnspan=2, row=0)
+CTkLabel(frame, image=fondo, text="", fg_color="transparent", bg_color="transparent").grid(columnspan=2, row=0)
 
 correo = CTkEntry(frame, font=("sans rerif", 12), bg_color=c_negro, text_color=c_verde, placeholder_text="Correo electronico", border_color=c_verde, fg_color=c_negro, width = 220, height= 40)
 correo.grid(columnspan=2, row=1, padx=4, pady=4)

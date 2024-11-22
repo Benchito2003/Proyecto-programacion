@@ -39,12 +39,13 @@ git reset --hard <commit-id> #"Borramos" todo hasta el commit con el id seleccio
 #Nota: realmente no estamos "borrando" los commits, solo estamos "regresando" a un commmit e ignorando los futuros, sin embargo pueden ser recuperados desde el historial
 git reflog #accedemos al historial
 git reset --soft <commit-id> #Guardamos todos los cambios y nos regresamos hasta el commit con el id seleccionado
-git reset --mixed <commit-id> #Dejamos sin guardar los cambios y nos regresamos al commir con el id seleccioonado
+git reset --mixed <commit-id> #Dejamos sin guardar los cambios y nos regresamos al commir con el id seleccionado
 
 Restaurar cambios
 git restore <nombre-archivo-borrado> #Restauramos un archivo borrado como lo teniamos guardado hasta el último "guardado" (tiene que haber sido guardado antes con add)
 git checkout <nombre-archivo> #Regresa un archivo a su versión del último "guardado" (con el comando add)
-
+git checkout <commit-id> #Restaura todo hasta la versión del commit con el id seleccionado (movemos el HEAD a dicho commit)
+git checkout <nombre-rama> #Restaura todo a la ULTIMA versión de la rama (podemos usarlo para regresar el HEAD al MASTER o para  cambiarnos a una rama que nos hayamos traido con fetch)1
 Atajos:
 git config --global alias.nombre-alias "(función a la que queremos llamar)"
 
