@@ -3,19 +3,20 @@ Esta rama esta diseñada como un filtro de cambios con la principal,
 
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
-- [ ] Crear una ventana para ingresar el nombre del usuario
-- [ ] Crear una ventana para añadir un nuevo usuario (capturar: Nombre, Apellido, fecha de nacimiento, y crearle un nombre de usuario)
-- [ ] Crear una base de datos o un data frame (mejor trabajaremos con lo que veamos que es más cómodo) con dos tablas: una para datos de usuario (con los datos capturados) y otra para las frecuencias cardiacas.
-- [ ] Crear la ventana principal de nuestro programa (opciones para ver registros pasados, crear un nuevo registro, etc.)
-- [ ] Crear un programa que funcione de intermediario entre nuestra base de datos y los programas: que permita traer datos de la base de datos en forma de datos con los que podamos trabajar y que permita tambien subir a la base de datos los registros que tomemos. 
-- [ ] Hacer un programa que permita hacer CRUD (Create, Read, Update, Delete)de forma sencilla con la base de datos
-- [ ] Crear una ventana que para calcular media, moda y mediana de un conjunto de datos
-- [ ] Crear un progama que permita obtener datos de sensor (ya después con calma vemos si los mostramos en tiempo real)
+- [x] Crear una ventana para ingresar el nombre del usuario
+- [x] Crear la ventana principal de nuestro programa.
+- [x] Crear una ventana para añadir un nuevo usuario.
+- [ ] Crear una función que nos permita obtener datos de los "entry"
+- [ ] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
+    - Las 2 primeras letras del nombre.
+    - Las 2 primeras letras del apellido.
+    - Un número aleatorio de dos dígitos.
+- [ ] Crear dos data frames: una para datos de usuario (con los datos capturados) y otra para las  rutas donde estan guardadas las frecuencias cardiacas.
+- [ ] Crear una función que permita guardar los datos capturados en la dataframe
+- [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 
 ## Funcionalidades a aclarar:
-- ¿Que datos necesitamos del usuario?
-- ¿Con qúe prefieren trabajar data frames o una base de datos?
 - ¿Con qué paleta de colores trabajaremos?
 
 ## Sugerencias:
