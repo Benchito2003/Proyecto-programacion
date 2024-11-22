@@ -12,9 +12,9 @@ def abrir_ventana(ventana_padre, ventana_hija): #  código de: https://customtki
     else:
         ventana_padre.ventana_abierta.focus()
 
-""" def mostrar_frame(frame):
+def mostrar_frame(frame):
     frame.place(relwidth=1, relheight=1)
-    frame.tkraise() """
+    frame.tkraise()
 
 
 # Pruebas

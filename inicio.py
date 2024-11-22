@@ -66,17 +66,13 @@ class V_inicio(CTk):
         self.b_crear_usuario.grid(column=0, row=2, padx=4, pady=4)
 
         ## Boton para entrar
-        self.b_entrar = CustomButton(self.marco1, text="Entrar", command=lambda: self.mostrar_frame(frame=self.marco2))
+        self.b_entrar = CustomButton(self.marco1, text="Entrar", command=lambda: f.mostrar_frame(self.marco2))
         self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
 
         ## Botón para cerrar
         self.b_cerrar = CustomButton(self.marco1, text="Salir de la aplicación", command= lambda: f.cerrar_ventana(self))
         self.b_cerrar.grid(columnspan=2, row=3, padx=4, pady=4) 
 
-    # Funciones propias de "inicio.py"
-    def mostrar_frame(frame):
-        frame.place(relwidth=1, relheight=1)
-        frame.tkraise()
 
 # Main
 
