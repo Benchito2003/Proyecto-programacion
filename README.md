@@ -1,5 +1,5 @@
-# Rama principal
-estas en la rama principal, cambiate a tu rama para hacer tus propios cambios, checa la de desarrollo para más información
+# Rama de Desarrollo
+Esta rama funge como filtro antes de la principal
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
 - [x] Crear una ventana para ingresar el nombre del usuario
