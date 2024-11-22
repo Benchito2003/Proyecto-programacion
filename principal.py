@@ -30,7 +30,7 @@ class V_principal(customtkinter.CTkFrame):
         self.b_ver = CustomButton(self, text="Ver registros")
         self.b_ver.grid(row=1, column=2, padx=4,pady=4)
         ## Botón para salir
-        self.b_salida = CustomButton(self, text="Salir de la aplicación", command=lambda: f.cerrar_ventana(self))
+        self.b_salida = CustomButton(self, text="Salir de la aplicación", command=lambda: f.cerrar_ventana(master))
         self.b_salida.grid(row=4, column=2, padx=4, pady=4)
 
 
