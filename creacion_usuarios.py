@@ -43,15 +43,17 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         self.e_edad.grid(row=2, column=1, padx=4, pady=4)
 
         ## Botón para generar el usuario
-        self.b_gen_usuario = CustomButton(self, text="Generar usuario", command=self.obtener_campos)
+        self.b_gen_usuario = CustomButton(self, text="Generar usuario", command=self.generar_usuario)
         self.b_gen_usuario.grid(row=3, columnspan=2, padx=4, pady=4)
 
         ## Etiqueta Usuario
         self.l_usuario = CustomLabel(self, text="Tu usuario es:")
-        self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
+        # self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
+        # self.l_usuario.grid_forget()
         ## Etiqueta del usuario generado
         self.l_usuario_generado = CustomLabel(self, text="Usuario generado automaticamente")
-        self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
+        # self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
+        # self.l_usuario_generado.grid_forget()
 
         ## Botón para continuar
         self.b_continuar = CustomButton(self, text="cerrar", command=lambda: f.cerrar_ventana(self))
@@ -73,7 +75,14 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         return conjunto
 
     def generar_usuario(self):
+        # paso 1: obtenemos los datos y los guardamos
         self.obtener_campos()
+        # paso 2: ocultamos el botón de generar usuario
+        self.b_gen_usuario.grid_forget()
+        # paso 3: enseñamos la etiqueta con el usuario generado
+        self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
+        self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
+        # paso 4: borramos evidencia la evidencia del crimen >;) 
         self.borrar_campos()
 
 # Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
