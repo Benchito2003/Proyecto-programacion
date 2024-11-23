@@ -3,7 +3,10 @@ import customtkinter
 
 #Importar módulos propios:
 import funciones_botones as f
-from config import *
+from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
+
+# Variable global para el usuario
+usuario_generado = None
 
 # Clase de la ventana nueva
 class V_nuevo_usuario(customtkinter.CTkToplevel):
@@ -66,8 +69,12 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         edad = f.obtener_texto(self.e_edad)
         conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad}
 
-        self.borrar_campos()
+        # self.borrar_campos()
+        return conjunto
 
+    def generar_usuario(self):
+        self.obtener_campos()
+        self.borrar_campos()
 
 # Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
 class App(customtkinter.CTk):
@@ -77,6 +84,9 @@ class App(customtkinter.CTk):
 
         self.button_1 = customtkinter.CTkButton(self, text="open toplevel", command=self.open_toplevel)
         self.button_1.pack(side="top", padx=20, pady=20)
+
+        self.boton_cerrar = CustomButton(self, text="cerrar ventana", command=lambda: f.cerrar_ventana(self))
+        self.boton_cerrar.pack(side="bottom", padx=20, pady=20)
 
         self.toplevel_window = None
 
