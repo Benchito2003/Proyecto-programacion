@@ -4,7 +4,7 @@ import colores
 import customtkinter
 
 # Colores escogidos
-paleta = colores.paleta1
+paleta = colores.paleta2
 c1 = paleta[0] # Para el fondo
 c2 = paleta[1] # Iconos 1
 c3 = paleta[2] # Iconos 2
