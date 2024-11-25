@@ -29,7 +29,7 @@ class V_inicio(CTk):
         super().__init__(*args, **kwargs)
         # Popiedades de la ventana
         self.geometry("500x200")  # Geometría (Aun puede ser cambiada)
-        # self.minsize(320, 540) # tamaño mínimo para que no pasen cosas extrañas ;)
+        self.minsize(500, 200) # tamaño mínimo para que no pasen cosas extrañas ;)
         self.config(bg = c1) # Un color de fondo
         self.title("Life Rhythm")
 
@@ -43,7 +43,6 @@ class V_inicio(CTk):
         # marcos
         ## marco 1: ingreso de usuario
         self.marco1 = CTkFrame(self, fg_color=c1, bg_color=c1) #le ponemos el mismo color que el de fondo de pantalla
-        # self.marco1.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
         ## Marco 0: Presentación del programa
         self.marco0 = marco0.Presenteishon(master=self, marco_siguiente=self.marco1)
         self.marco0.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
@@ -52,9 +51,7 @@ class V_inicio(CTk):
         self.marco1.rowconfigure([0,1,2,3,4,5], weight=1) 
         ## marco 2: marco de la ventana principal
         self.marco2 = principal.F_principal(master=self) 
-        
 
-        
 
         # Widgets marco 1
         ## Etiqueta usuario
@@ -62,7 +59,7 @@ class V_inicio(CTk):
         self.l_usuario.grid(column=0, row=1, padx=4, pady=4)
 
         ## Entrada de usuario
-        self.e_usuario = CustomEntry(self.marco1, placeholder_text="Ingresar usuario")
+        self.e_usuario = CustomEntry(self.marco1, placeholder_text="Codigo de usuario")
         self.e_usuario.grid(column=1, row=1, padx=4, pady=4) # Se va a colocar en la primera fila
 
         ## Boton crear usuario

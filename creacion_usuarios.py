@@ -56,7 +56,7 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         self.l_edad = CustomLabel(self, text="Edad:")
         self.l_edad.grid(row=2, column=0, padx=4, pady=4)
         ## Entrada edad
-        self.e_edad = CustomEntry(self, placeholder_text="Edad en numero entero nmms")
+        self.e_edad = CustomEntry(self, placeholder_text="Solo enteros")
         self.e_edad.grid(row=2, column=1, padx=4, pady=4)
 
         ## Botón para generar el usuario
