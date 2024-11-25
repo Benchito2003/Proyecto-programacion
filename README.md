@@ -7,8 +7,8 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [x] Crear la ventana principal de nuestro programa.
 - [x] Crear una ventana para añadir un nuevo usuario.
 - [x] Crear una función que nos permita obtener datos de los "entry".
-- [ ] Crear función que permita asegurarnos que los campos estén correctamente llenos.
-- [ ] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
+- [x] Crear función que permita asegurarnos que los campos estén correctamente llenos.
+- [x] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
     - Las 2 primeras letras del nombre.
     - Las 2 primeras letras del apellido.
     - Un número aleatorio de dos dígitos.

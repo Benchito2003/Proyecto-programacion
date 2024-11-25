@@ -56,7 +56,7 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         self.l_edad = CustomLabel(self, text="Edad:")
         self.l_edad.grid(row=2, column=0, padx=4, pady=4)
         ## Entrada edad
-        self.e_edad = CustomEntry(self, placeholder_text="Ingresar edad")
+        self.e_edad = CustomEntry(self, placeholder_text="Edad en numero entero nmms")
         self.e_edad.grid(row=2, column=1, padx=4, pady=4)
 
         ## Botón para generar el usuario
@@ -65,12 +65,8 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
 
         ## Etiqueta Usuario
         self.l_usuario = CustomLabel(self, text="Tu usuario es:")
-        # self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
-        # self.l_usuario.grid_forget()
         ## Etiqueta del usuario generado
         self.l_usuario_generado = CustomLabel(self, text="Usuario generado automaticamente")
-        # self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
-        # self.l_usuario_generado.grid_forget()
 
         ## Botón para continuar
         self.b_continuar = CustomButton(self, text="cerrar", command=lambda: f.cerrar_ventana(self))
@@ -89,10 +85,10 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         edad = f.obtener_texto(self.e_edad)
 
         # Conjunto para guardar en la base de datos
-        conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad} 
+        # conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad} 
         self.usuario_generado = Usuario(nombre, apellido, edad) 
         # Nota: posteriormente en vez de retornarlo, deberá guardarlo en la dataframe
-        return conjunto 
+        # return conjunto 
 
 
     def generar_usuario(self): 
@@ -114,7 +110,7 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         except:
             # Mensaje de error si ingresan datos inválidos
             self.b_gen_usuario.grid_forget()
-            self.l_usuario_generado.configure(text=f"Los datos ingresados no son válidos")
+            self.l_usuario_generado.configure(text=f"Los datos ingresados no son válidos, cierre e intente de nuevo.")
             self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
             self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
             self.borrar_campos()
