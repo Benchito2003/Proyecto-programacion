@@ -16,6 +16,7 @@ from customtkinter import CTk, CTkFrame, CTkEntry, CTkButton, CTkLabel
 
 
 #Importar módulos propios:
+import marco0
 import creacion_usuarios
 import funciones_botones as f
 import principal
@@ -42,12 +43,15 @@ class V_inicio(CTk):
         # marcos
         ## marco 1: ingreso de usuario
         self.marco1 = CTkFrame(self, fg_color=c1, bg_color=c1) #le ponemos el mismo color que el de fondo de pantalla
-        self.marco1.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
+        # self.marco1.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
+        ## Marco 0: Presentación del programa
+        self.marco0 = marco0.Presenteishon(master=self, marco_siguiente=self.marco1)
+        self.marco0.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
         ### configuración de columnas y ventanas del marco
         self.marco1.columnconfigure([0, 1], weight=1)
         self.marco1.rowconfigure([0,1,2,3,4,5], weight=1) 
         ## marco 2: marco de la ventana principal
-        self.marco2 = principal.V_principal(master=self) 
+        self.marco2 = principal.F_principal(master=self) 
         
 
         

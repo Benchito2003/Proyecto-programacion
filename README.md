@@ -2,7 +2,8 @@
 Esta rama esta diseñada como un filtro de cambios con la principal, 
 
 ## Funcionalidades a añadir:
-Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
+Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en la ventana principal
+- [ ] Crear el frame de inicio
 - [x] Crear una ventana para ingresar el nombre del usuario
 - [x] Crear la ventana principal de nuestro programa.
 - [x] Crear una ventana para añadir un nuevo usuario.
