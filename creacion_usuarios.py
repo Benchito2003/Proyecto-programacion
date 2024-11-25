@@ -1,12 +1,26 @@
 # Importamos al papá de todas nuestras librerías
 import customtkinter
+import random # Para poder tener unos numeros aleatorios en el usuario
 
 #Importar módulos propios:
 import funciones_botones as f
 from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
 
-# Variable global para el usuario
-usuario_generado = None
+# Clase para agregar los datos el usuario
+class Usuario:
+    def __init__(self, nombre, apellido, edad):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+    
+    def gen_codigo(self):
+        num_aleatorio = random.randint(1, 100)
+        letras_nombre = self.nombre[:2].upper() #las dos primeras letras y siempre en mayusculas
+        letras_apellido = self.apellido[:2].upper() # Las dos primeras letras y siempre en mayusculas
+        edad = int(self.edad)
+        codigo = f"{letras_nombre}{letras_apellido}{edad:02d}{num_aleatorio}" # con :02d damos formato el numero
+        print(codigo)
+        return codigo
 
 # Clase de la ventana nueva
 class V_nuevo_usuario(customtkinter.CTkToplevel):
@@ -16,9 +30,12 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         self.geometry("400x300")
         self.title("Crear usuario nuevo")
         self.config(bg=c1)
-        # Configuraciones del grid
+        ## Configuraciones del grid
         self.columnconfigure([0, 1, 2], weight=1)
         self.rowconfigure([0,1,2,3,4,5], weight=1) 
+
+        ## En este caso el usuario es un elemento de la ventana
+        self.usuario_generado = None
 
         # Widgets de la ventana de la creación de usuario
         ## Etiqueta nombre
@@ -66,24 +83,41 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         f.borrar_texto(self.e_edad)
     
     def obtener_campos(self):
+        """ Obtenemos los campos y los guardamos como una propiedad de la clase """
         nombre = f.obtener_texto(self.e_nombre)
         apellido = f.obtener_texto(self.e_apellido)
         edad = f.obtener_texto(self.e_edad)
-        conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad}
 
-        # self.borrar_campos()
-        return conjunto
+        # Conjunto para guardar en la base de datos
+        conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad} 
+        self.usuario_generado = Usuario(nombre, apellido, edad) 
+        # Nota: posteriormente en vez de retornarlo, deberá guardarlo en la dataframe
+        return conjunto 
 
-    def generar_usuario(self):
-        # paso 1: obtenemos los datos y los guardamos
-        self.obtener_campos()
-        # paso 2: ocultamos el botón de generar usuario
-        self.b_gen_usuario.grid_forget()
-        # paso 3: enseñamos la etiqueta con el usuario generado
-        self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
-        self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
-        # paso 4: borramos evidencia la evidencia del crimen >;) 
-        self.borrar_campos()
+
+    def generar_usuario(self): 
+        """ Proceso para crear un usuario: """
+        # paso 1: obtenemos los datos y verificamos que no hayan errores
+        try:
+            self.obtener_campos()
+            # paso 2: Generamos un nuevo usuario con una función de la clase
+            codigo = self.usuario_generado.gen_codigo()
+            # paso 3: ocultamos el botón de generar usuario
+            self.b_gen_usuario.grid_forget()
+            # Paso 4: Modificamos la etiqueta para que enseñe el usuario generado
+            self.l_usuario_generado.configure(text=f"Su codigo de usuario es: {codigo}")
+            # paso 5: enseñamos la etiqueta con el usuario generado
+            self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
+            self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
+            # paso 6: borramos evidencia la evidencia del crimen >;) 
+            self.borrar_campos()
+        except:
+            # Mensaje de error si ingresan datos inválidos
+            self.b_gen_usuario.grid_forget()
+            self.l_usuario_generado.configure(text=f"Los datos ingresados no son válidos")
+            self.l_usuario.grid(row=4, column=0, padx=4, pady=4)
+            self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
+            self.borrar_campos()
 
 # Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
 class App(customtkinter.CTk):

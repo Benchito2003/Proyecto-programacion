@@ -6,7 +6,8 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [x] Crear una ventana para ingresar el nombre del usuario
 - [x] Crear la ventana principal de nuestro programa.
 - [x] Crear una ventana para añadir un nuevo usuario.
-- [ ] Crear una función que nos permita obtener datos de los "entry"
+- [x] Crear una función que nos permita obtener datos de los "entry".
+- [ ] Crear función que permita asegurarnos que los campos estén correctamente llenos.
 - [ ] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
     - Las 2 primeras letras del nombre.
     - Las 2 primeras letras del apellido.
@@ -46,7 +47,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)
-Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
+Para poder tener todas las librerias necesarias de putazo ejecutar el siguiente comando:
 
 
 ```python
