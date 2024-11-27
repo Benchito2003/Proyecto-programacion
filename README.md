@@ -82,3 +82,9 @@ deactivate
 - https://customtkinter.tomschimansky.com/documentation/
 ### tkinter
 - https://docs.python.org/es/3/library/tk.html
+### Matplotlib
+- https://matplotlib.org/
+### PIL
+- https://pillow.readthedocs.io/en/stable/
+### Pandas
+- https://pandas.pydata.org/docs/
