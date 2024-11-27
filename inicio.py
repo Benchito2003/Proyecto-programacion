@@ -7,7 +7,7 @@ El García²
 El Aleks
 Alfonso Gamboa Rubén
 
-La ventana de inicio aunque suene irónico, es la ventana main, que es la que se va a ejecutar, por lo ésta organiza y llama al resto
+
 
 '''
 
@@ -38,7 +38,6 @@ class V_inicio(CTk):
         self.rowconfigure(0, weight=1)
 
         self.ventana_abierta = None # Variable que nos ayudadrá a saber si ya hay abierta una ventana nueva
-
 
         # marcos
         ## marco 1: ingreso de usuario
