@@ -1,7 +1,6 @@
 # Importamos al papá de todas nuestras librerías
 import customtkinter
 import random # Para poder tener unos numeros aleatorios en el usuario
-import os
 
 #Importar módulos propios:
 import funciones_botones as f
@@ -33,7 +32,7 @@ class Usuario:
         if self.codigo != None:
             columnas = ["Codigo", "Nombre", "Apellido", "Edad" ]
             datos = [[self.codigo, self.nombre, self.apellido, self.edad]]
-            if os.path.exists(self.nombre_fichero): # si existe el fichero:
+            if f_df.verificar_archivo(self.nombre_fichero): # si existe el fichero:
                 # guardamos lo del archivo en un dataframe temporal
                 df_leido = f_df.leer_desde_archivo(self.nombre_fichero)
                 # Actualizamos la dataframe 
@@ -148,15 +147,15 @@ if __name__ == "__main__":
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
             self.geometry("500x400")
-    
+
             self.button_1 = customtkinter.CTkButton(self, text="open toplevel", command=self.open_toplevel)
             self.button_1.pack(side="top", padx=20, pady=20)
-    
+
             self.boton_cerrar = CustomButton(self, text="cerrar ventana", command=lambda: f.cerrar_ventana(self))
             self.boton_cerrar.pack(side="bottom", padx=20, pady=20)
-    
+
             self.toplevel_window = None
-    
+
         def open_toplevel(self):
             if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
                 self.toplevel_window = VCrearUsuario(self)  # create window if its None or destroyed

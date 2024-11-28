@@ -12,7 +12,7 @@ Alfonso Gamboa Rubén
 '''
 
 import tkinter as Tk
-from customtkinter import CTk, CTkFrame, CTkEntry, CTkButton, CTkLabel
+from customtkinter import CTk
 
 
 #Importar módulos propios:

@@ -29,6 +29,7 @@ def reemplazar_texto(entry, texto):
     entry.delete(0, 'end')
     entry.insert(0, texto)
 
+
 """ ## Funciones relacionadas al mouse (en proceso)
 def cambiar_estilo(boton):
     # Estilo a cambiar cuando el mouse está encima

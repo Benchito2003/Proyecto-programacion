@@ -42,5 +42,5 @@ class CustomEntry(customtkinter.CTkEntry):
 # Estilo general de los combobox
 
 class CustomComboBox(customtkinter.CTkComboBox):
-    def __init__(self, master, valores, **kwargs):
-        super().__init__(master, values=valores, font=(fuente, t_fuente), dropdown_font=(fuente, t_fuente), bg_color=c1, hover=True, justify="center", fg_color=c4)
+    def __init__(self, master, valores, comando, **kwargs):
+        super().__init__(master, values=valores, command=comando, font=(fuente, t_fuente), dropdown_font=(fuente, t_fuente), bg_color=c1, hover=True, justify="center", fg_color=c4)

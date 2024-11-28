@@ -1,7 +1,14 @@
 # Librería de funciones para los dataframes
 import pandas as pd
+import os
 
 ## Archivos
+def verificar_archivo(archivo):
+    if os.path.exists(archivo):
+        return True
+    else:
+        return False
+
 def guardar_en_archivo(df, archivo, delimitador=','):
     """ Guarda el dataframe en un archivo de texto """
     df.to_csv(archivo, index=False, sep=delimitador)
