@@ -47,14 +47,14 @@ class V_inicio(CTk):
         self.marco0.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)
         ### configuración de columnas y ventanas del marco
         self.marco1.columnconfigure([0, 1], weight=1)
-        self.marco1.rowconfigure([0,1,2,3,4,5], weight=1) 
+        self.marco1.rowconfigure([0,1,2,3,4,5], weight=1)
         ## marco 2: marco de la ventana principal
         self.marco2 = principal.F_principal(master=self) 
 
 
         # Widgets marco 1
         ## Etiqueta usuario
-        self.l_usuario = CustomLabel(self.marco1, text="Usuario:")
+        self.l_usuario = CustomLabel(self.marco1, text="Usuario:") 
         self.l_usuario.grid(column=0, row=1, padx=4, pady=4)
 
         ## Entrada de usuario

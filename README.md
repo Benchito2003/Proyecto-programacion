@@ -78,10 +78,10 @@ deactivate
 ```
 
 ## Documentación
-### Custom Tkinter
-- https://customtkinter.tomschimansky.com/documentation/
 ### tkinter
 - https://docs.python.org/es/3/library/tk.html
+### Custom Tkinter
+- https://customtkinter.tomschimansky.com/documentation/
 ### Matplotlib
 - https://matplotlib.org/
 ### PIL

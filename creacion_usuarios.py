@@ -1,9 +1,11 @@
 # Importamos al papá de todas nuestras librerías
 import customtkinter
 import random # Para poder tener unos numeros aleatorios en el usuario
+import os
 
 #Importar módulos propios:
 import funciones_botones as f
+import funciones_dataframes as f_df
 from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
 
 # Clase para agregar los datos el usuario
@@ -12,6 +14,8 @@ class Usuario:
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+        self.codigo = None
+        self.nombre_fichero = "usuarios.csv"
     
     def gen_codigo(self):
         num_aleatorio = random.randint(1, 100)
@@ -19,8 +23,27 @@ class Usuario:
         letras_apellido = self.apellido[:2].upper() # Las dos primeras letras y siempre en mayusculas
         edad = int(self.edad)
         codigo = f"{letras_nombre}{letras_apellido}{edad:02d}{num_aleatorio}" # con :02d damos formato el numero
-        print(codigo)
+        # print(codigo)
+        # Guardamos el código como una propiedad de la clase
+        self.codigo = codigo
         return codigo
+    
+    def guardar(self):
+        # Nos aseguramos que exista un código de usuario antes de guardarlo
+        if self.codigo != None:
+            columnas = ["Codigo", "Nombre", "Apellido", "Edad" ]
+            datos = [[self.codigo, self.nombre, self.apellido, self.edad]]
+            if os.path.exists(self.nombre_fichero):
+                # guardamos lo del archivo en un dataframe temporal
+                df_leido = f_df.leer_desde_archivo(self.nombre_fichero)
+                df = f_df.guardar_datos(datos, columnas, df_leido)
+            else:
+                df = f_df.guardar_datos(datos, columnas)
+
+            # Lo guardamos en el fichero
+            f_df.guardar_en_archivo(df, self.nombre_fichero)
+
+
 
 # Clase de la ventana nueva
 class V_nuevo_usuario(customtkinter.CTkToplevel):
@@ -36,6 +59,7 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
 
         ## En este caso el usuario es un elemento de la ventana
         self.usuario_generado = None
+        self.datos_nuevos = None
 
         # Widgets de la ventana de la creación de usuario
         ## Etiqueta nombre
@@ -84,12 +108,8 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
         apellido = f.obtener_texto(self.e_apellido)
         edad = f.obtener_texto(self.e_edad)
 
-        # Conjunto para guardar en la base de datos
-        # conjunto = {"nombre":nombre, "apellido":apellido, "edad":edad} 
+        # Creamos un objeto de usuario y lo guardamos dentro de las propiedades de la clase
         self.usuario_generado = Usuario(nombre, apellido, edad) 
-        # Nota: posteriormente en vez de retornarlo, deberá guardarlo en la dataframe
-        # return conjunto 
-
 
     def generar_usuario(self): 
         """ Proceso para crear un usuario: """
@@ -107,6 +127,9 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
             self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
             # paso 6: borramos evidencia la evidencia del crimen >;) 
             self.borrar_campos()
+            # Paso 7: guardamos los datos en la dataframe
+            self.usuario_generado.guardar()
+            
         except:
             # Mensaje de error si ingresan datos inválidos
             self.b_gen_usuario.grid_forget()
