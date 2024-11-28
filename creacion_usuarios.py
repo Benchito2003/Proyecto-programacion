@@ -33,11 +33,13 @@ class Usuario:
         if self.codigo != None:
             columnas = ["Codigo", "Nombre", "Apellido", "Edad" ]
             datos = [[self.codigo, self.nombre, self.apellido, self.edad]]
-            if os.path.exists(self.nombre_fichero):
+            if os.path.exists(self.nombre_fichero): # si existe el fichero:
                 # guardamos lo del archivo en un dataframe temporal
                 df_leido = f_df.leer_desde_archivo(self.nombre_fichero)
+                # Actualizamos la dataframe 
                 df = f_df.guardar_datos(datos, columnas, df_leido)
             else:
+                # Creamos un dataframe completamente nuevo de fábrica
                 df = f_df.guardar_datos(datos, columnas)
 
             # Lo guardamos en el fichero
@@ -46,7 +48,7 @@ class Usuario:
 
 
 # Clase de la ventana nueva
-class V_nuevo_usuario(customtkinter.CTkToplevel):
+class VCrearUsuario(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Configuracion de la ventana
@@ -138,29 +140,30 @@ class V_nuevo_usuario(customtkinter.CTkToplevel):
             self.l_usuario_generado.grid(row=4, column=1, padx=4, pady=4)
             self.borrar_campos()
 
-# Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
-class App(customtkinter.CTk):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.geometry("500x400")
 
-        self.button_1 = customtkinter.CTkButton(self, text="open toplevel", command=self.open_toplevel)
-        self.button_1.pack(side="top", padx=20, pady=20)
-
-        self.boton_cerrar = CustomButton(self, text="cerrar ventana", command=lambda: f.cerrar_ventana(self))
-        self.boton_cerrar.pack(side="bottom", padx=20, pady=20)
-
-        self.toplevel_window = None
-
-    def open_toplevel(self):
-        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
-            self.toplevel_window = V_nuevo_usuario(self)  # create window if its None or destroyed
-        else:
-            self.toplevel_window.focus()  # if window exists focus it
 
 if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+    # Ejemplo de introducir la ventana nueva dentro de la ventana, esto no es necesario modificar solo es para poder llamar a la ventana para poder desarrollar mas fácil
+    class App(customtkinter.CTk):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            self.geometry("500x400")
+    
+            self.button_1 = customtkinter.CTkButton(self, text="open toplevel", command=self.open_toplevel)
+            self.button_1.pack(side="top", padx=20, pady=20)
+    
+            self.boton_cerrar = CustomButton(self, text="cerrar ventana", command=lambda: f.cerrar_ventana(self))
+            self.boton_cerrar.pack(side="bottom", padx=20, pady=20)
+    
+            self.toplevel_window = None
+    
+        def open_toplevel(self):
+            if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
+                self.toplevel_window = VCrearUsuario(self)  # create window if its None or destroyed
+            else:
+                self.toplevel_window.focus()  # if window exists focus it
+        app = App()
+        app.mainloop()
 
 """ 
 Código inspirado de:

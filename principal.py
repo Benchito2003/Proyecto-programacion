@@ -8,11 +8,11 @@ from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_neg
 import funciones_botones as f
 
 # Marco del programa principal
-class F_principal(customtkinter.CTkFrame):
+class FrPrincipal(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, fg_color=c1, bg_color=c1, **kwargs)
 
-        # Configuraciones del marco
+        # Configuraciones grid del marco
         self.columnconfigure([0, 1, 2], weight=1)
         self.rowconfigure([0,1,2,3,4,5], weight=1) 
 
@@ -35,16 +35,16 @@ class F_principal(customtkinter.CTkFrame):
 
 
 # Aqui podemos probar que el marco funcione correctamente y sin errores:
-class App(customtkinter.CTk):
-    def __init__(self):
-        super().__init__()
-        self.geometry("400x200")
-        self.grid_rowconfigure(0, weight=1)  # configure grid system
-        self.grid_columnconfigure(0, weight=1)
-
-        self.my_frame = F_principal(master=self)
-        self.my_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
-
 if __name__ == "__main__":
+    class App(customtkinter.CTk):
+        def __init__(self):
+            super().__init__()
+            self.geometry("400x200")
+            self.grid_rowconfigure(0, weight=1)  # configure grid system
+            self.grid_columnconfigure(0, weight=1)
+
+            self.my_frame = FrPrincipal(master=self)
+            self.my_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+
     app = App()
     app.mainloop()

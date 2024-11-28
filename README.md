@@ -4,7 +4,7 @@ Esta rama esta diseñada como un filtro de cambios con la principal,
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en la ventana principal
 - [x] Crear el frame de inicio
-    - [ ] Añadir la animacion del corazon al frame de inicio
+    - [ ] Añadir la animacion del corazón al frame de inicio
     - [ ] Añadir animación de inicio
 - [x] Crear una ventana para ingresar el nombre del usuario
 - [x] Crear la ventana principal de nuestro programa.
@@ -15,8 +15,10 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
     - Las 2 primeras letras del nombre.
     - Las 2 primeras letras del apellido.
     - Un número aleatorio de dos dígitos.
-- [ ] Crear dos data frames: una para datos de usuario (con los datos capturados) y otra para las  rutas donde estan guardadas las frecuencias cardiacas.
-- [ ] Crear una función que permita guardar los datos capturados en la dataframe
+- [ ] Crear dos data frames: 
+    - [x] Para datos de usuario (con los datos capturados) 
+    - [ ] para las  rutas donde estan guardadas las frecuencias cardiacas relacionadas con sus fechas.
+- [x] Crear una función que permita guardar los datos capturados en la dataframe
 - [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 
