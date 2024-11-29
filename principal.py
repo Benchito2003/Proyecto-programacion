@@ -6,6 +6,7 @@ Documentación: https://customtkinter.tomschimansky.com/documentation/widgets/fr
 import customtkinter
 from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
 import funciones_botones as f
+import ver_registros
 
 # Marco del programa principal
 class FrPrincipal(customtkinter.CTkFrame):
@@ -14,7 +15,7 @@ class FrPrincipal(customtkinter.CTkFrame):
 
         # Configuraciones grid del marco
         self.columnconfigure([0, 1, 2], weight=1)
-        self.rowconfigure([0,1,2,3,4,5], weight=1) 
+        self.rowconfigure([0,1,2,3,4,5], weight=1)
 
         # Widgets del Frame principal
         ## Etiqueta menu principal
@@ -27,7 +28,7 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.b_esfuerzo = CustomButton(self, text="Prueba de esfuerzo")
         self.b_esfuerzo.grid(row=1, column=1, padx=4, pady=4)
         ## Botón para ver registros
-        self.b_ver = CustomButton(self, text="Ver registros")
+        self.b_ver = CustomButton(self, text="Ver registros", command= lambda:f.abrir_ventana(master, ver_registros.VverRegistros))
         self.b_ver.grid(row=1, column=2, padx=4,pady=4)
         ## Botón para salir
         self.b_salida = CustomButton(self, text="Salir de la aplicación", command=lambda: f.cerrar_ventana(master))
@@ -42,6 +43,8 @@ if __name__ == "__main__":
             self.geometry("400x200")
             self.grid_rowconfigure(0, weight=1)  # configure grid system
             self.grid_columnconfigure(0, weight=1)
+
+            self.ventana_abierta = None
 
             self.my_frame = FrPrincipal(master=self)
             self.my_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")

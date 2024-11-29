@@ -52,6 +52,7 @@ class VCrearUsuario(customtkinter.CTkToplevel):
         super().__init__(*args, **kwargs)
         # Configuracion de la ventana
         self.geometry("400x300")
+        self.minsize(400, 300)
         self.title("Crear usuario nuevo")
         self.config(bg=c1)
         ## Configuraciones del grid
@@ -161,8 +162,8 @@ if __name__ == "__main__":
                 self.toplevel_window = VCrearUsuario(self)  # create window if its None or destroyed
             else:
                 self.toplevel_window.focus()  # if window exists focus it
-        app = App()
-        app.mainloop()
+    app = App()
+    app.mainloop()
 
 """ 
 Código inspirado de:
