@@ -11,9 +11,7 @@ Alfonso Gamboa Rubén
 
 '''
 
-import tkinter as Tk
 from customtkinter import CTk
-
 
 #Importar módulos propios:
 import marco0
@@ -57,4 +55,3 @@ class Vinicio(CTk):
 if __name__ == "__main__":
     inicio = Vinicio()
     inicio.mainloop()
-

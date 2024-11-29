@@ -18,7 +18,9 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [ ] Crear dos data frames: 
     - [x] Para datos de usuario (con los datos capturados) 
     - [ ] para las  rutas donde estan guardadas las frecuencias cardiacas relacionadas con sus fechas.
-- [x] Crear una función que permita guardar los datos capturados en la dataframe
+- [x] Crear una función que permita guardar los datos capturados en la dataframe.
+- [ ] Crear una función que nos permita entrar los datos del usuario especificado.
+- [ ] Crear una función que permita directamente presionar botones epecíficos con la tecla "Enter".
 - [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 
