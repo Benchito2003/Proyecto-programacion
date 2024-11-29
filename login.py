@@ -56,6 +56,8 @@ class FrLogin(customtkinter.CTkFrame):
         if opcion == "actualizar":
             lista_usuarios =  self.buscar_usuarios()
             self.cb_usuario.configure(values=lista_usuarios)
+        else:
+            pass
     
     def actualizar(self):
         self.cb_usuario.configure(values=self.buscar_usuarios())

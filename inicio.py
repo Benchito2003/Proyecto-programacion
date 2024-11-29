@@ -6,9 +6,6 @@ El samy
 El García²
 El Aleks
 Alfonso Gamboa Rubén
-
-
-
 '''
 
 from customtkinter import CTk
