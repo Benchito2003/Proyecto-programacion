@@ -52,7 +52,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)
-}
+
 ### crear y activar entornos en python:
 crear un entorno:
 ```python

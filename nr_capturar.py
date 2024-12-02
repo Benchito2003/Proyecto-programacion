@@ -6,7 +6,7 @@ class FrCaptura(CustomFrame):
         super().__init__(master, **kwargs)
 
         #Variables de control
-        self.tiempo=5
+        self.tiempo=20
         
         # Widgets
         self.l_titulo = CustomLabel(self, text="Captura de frecuencia cardiaca")
