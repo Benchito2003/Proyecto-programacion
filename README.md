@@ -1,17 +1,25 @@
 # Rama de Desarrollo
 Esta rama funge como filtro antes de la principal
 ## Funcionalidades a añadir:
-Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en 
+Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en la ventana principal
+- [x] Crear el frame de inicio
+    - [ ] Añadir la animacion del corazón al frame de inicio
+    - [ ] Añadir animación de inicio
 - [x] Crear una ventana para ingresar el nombre del usuario
 - [x] Crear la ventana principal de nuestro programa.
 - [x] Crear una ventana para añadir un nuevo usuario.
-- [ ] Crear una función que nos permita obtener datos de los "entry"
-- [ ] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
+- [x] Crear una función que nos permita obtener datos de los "entry".
+- [x] Crear función que permita asegurarnos que los campos estén correctamente llenos.
+- [x] Crear una función que nos permita generar un nombre de usuario aleatorio a partir de:
     - Las 2 primeras letras del nombre.
     - Las 2 primeras letras del apellido.
     - Un número aleatorio de dos dígitos.
-- [ ] Crear dos data frames: una para datos de usuario (con los datos capturados) y otra para las  rutas donde estan guardadas las frecuencias cardiacas.
-- [ ] Crear una función que permita guardar los datos capturados en la dataframe
+- [ ] Crear dos data frames: 
+    - [x] Para datos de usuario (con los datos capturados) 
+    - [ ] para las  rutas donde estan guardadas las frecuencias cardiacas relacionadas con sus fechas.
+- [x] Crear una función que permita guardar los datos capturados en la dataframe.
+- [ ] Crear una función que nos permita entrar los datos del usuario especificado.
+- [ ] Crear una función que permita directamente presionar botones epecíficos con la tecla "Enter".
 - [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 
@@ -44,6 +52,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)
+}
 ### crear y activar entornos en python:
 crear un entorno:
 ```python
@@ -71,7 +80,13 @@ pip install -r requirements.txt
 
 
 ## Documentación
-### Custom Tkinter
-- https://customtkinter.tomschimansky.com/documentation/
 ### tkinter
 - https://docs.python.org/es/3/library/tk.html
+### Custom Tkinter
+- https://customtkinter.tomschimansky.com/documentation/
+### Matplotlib
+- https://matplotlib.org/
+### PIL
+- https://pillow.readthedocs.io/en/stable/
+### Pandas
+- https://pandas.pydata.org/docs/
