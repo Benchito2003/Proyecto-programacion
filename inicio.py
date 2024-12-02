@@ -1,10 +1,10 @@
 '''
 Creadores:
-La flor
-El inge
-El samy
-El García²
-El Aleks
+Caballero Trinidad Flor Isabel
+Cabañas Alba Alejandro
+Cortés Ramírez Samuel Jefte
+Pérez Roldán Eduardo Alejandro
+García García Ian Pablo
 Alfonso Gamboa Rubén
 '''
 

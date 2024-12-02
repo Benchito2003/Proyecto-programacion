@@ -3,10 +3,17 @@ Frame principal: Este es el frame donde se crean nuevos registros, se ven los re
 donde se puede hacer la prueba de esfuerzo
 Documentación: https://customtkinter.tomschimansky.com/documentation/widgets/frames
 """
+# Importamos librerías
+## Librerías de python
 import customtkinter
+## Módulos propios
+### Configuración general:
 from config import * # variables reservadas: c1, c2, c3, c4, c5, c_blanco, c_negro, fuente, t_fuente.
+### Funciones generales de los botones
 import funciones_botones as f
+### ventanas que van a surgir de esta clase
 import ver_registros
+import nuevo_registro
 
 # Marco del programa principal
 class FrPrincipal(customtkinter.CTkFrame):
@@ -22,7 +29,7 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.titulo = CustomLabel(self, text="Menu Principal")
         self.titulo.grid(row=0, columnspan=3, padx=20)
         ## Botón de nuevo registro
-        self.b_nuevo = CustomButton(self, text="Nuevo registro")
+        self.b_nuevo = CustomButton(self, text="Nuevo registro", command = lambda: f.abrir_ventana(master, nuevo_registro.VNuevoRegistro))
         self.b_nuevo.grid(row=1, column=0, padx=4, pady=4)
         ## Botón para prueba de esfuerzo
         self.b_esfuerzo = CustomButton(self, text="Prueba de esfuerzo")

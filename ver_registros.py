@@ -20,10 +20,17 @@ class VverRegistros(customtkinter.CTkToplevel):
     def generar_etiquetas(self, cantidad):
         " Generar etiquetas a corde con el npumero de registros que exitan"
         for i in range(cantidad):
-            self.l_registro = CustomLabel(self, text=f"registro{i}")
+            self.l_registro = CustomLabel(self, text=f"registro {i+1}")
             self.l_registro.grid(row=(i+1), column=0, padx=4, pady=4)
 
-            
+            self.b_graficar = CustomButton(self, text="Graficar")
+            self.b_graficar.grid(row=(i+1), column=1, padx=4, pady=4)
+
+            self.b_borrar = CustomButton(self, text="Borrar registro")
+            self.b_borrar.grid(row=(i+1), column=2, padx=4, pady=4)
+    
+    def ocultar_etiqueta(etiqueta):
+        etiqueta.grid_forget()
 
 
 

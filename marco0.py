@@ -14,7 +14,7 @@ class Presenteishon(customtkinter.CTkFrame):
         # Widgets
         ## Título
         self.l_titulo = CustomLabel(self, text = "Life Rhythm")
-        self.l_titulo.configure(font=(fuente, 25))
+        self.l_titulo.configure(font=(fuente, 25, "bold"))
         self.l_titulo.grid(row=0, columnspan=3, padx=20)
         ## Botón para iniciar
         self.b_iniciar = CustomButton(self, text="Iniciar programa", command=lambda: f.mostrar_frame(marco_siguiente))

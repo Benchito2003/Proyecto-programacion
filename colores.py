@@ -38,7 +38,7 @@ p5_c1 = "#101942"
 p5_c2 = "#80043a"
 p5_c3 = "#f60c49"
 p5_c4 = "#f09580"
-p5_c5 = "#fdf2b4"
+p5_c5 = "#ffffff"
 paleta5 = [p5_c1, p5_c2, p5_c3, p5_c4, p5_c5]
 
 p6_c1 = "#dccaa8"
