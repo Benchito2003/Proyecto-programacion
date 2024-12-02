@@ -1,5 +1,6 @@
 import customtkinter
 from config import *
+import funciones_botones as f
 
 class VverRegistros(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
@@ -10,12 +11,20 @@ class VverRegistros(customtkinter.CTkToplevel):
         # self.rowconfigure([0,1,2,3,4,5], weight=1) 
         self.config(bg=c1)
 
-        self.l_titulo = CustomLabel(self, text="Registros de 'Usuario'")
-        self.l_titulo.grid(row=0, columnspan=3, padx=20, pady=20)
-
+        # Variables de control
         self.numero_registros = 10
 
+        # Widgets
+        ## Etiquetas
+        self.l_titulo = CustomLabel(self, text="Registros de 'Usuario'")
+        self.l_titulo.grid(row=0, columnspan=2, padx=20, pady=20)
+
         self.generar_etiquetas(self.numero_registros)
+
+        ## Botones
+        self.b_salir = CustomButton(self, text="salir", command= lambda: f.cerrar_ventana(self))
+        self.b_salir.grid(row=0, column=2)
+
 
     def generar_etiquetas(self, cantidad):
         " Generar etiquetas a corde con el npumero de registros que exitan"
