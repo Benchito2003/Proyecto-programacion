@@ -1,6 +1,5 @@
-# Rama de desarrollo
-Esta rama esta diseñada como un filtro de cambios con la principal, 
-
+# Rama de Desarrollo
+Esta rama funge como filtro antes de la principal
 ## Funcionalidades a añadir:
 Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser usada en la ventana principal
 - [x] Crear el frame de inicio
@@ -50,21 +49,14 @@ Muy fácil:
 git push 
 ```
 Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en contraseña pegan la llave de github que les mandé.
-
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)
-Para poder tener todas las librerias necesarias de putazo ejecutar el siguiente comando:
-
-
-```python
-pip install -r requirements.txt
-```
-
-## crear y activar entornos en python:
+}
+### crear y activar entornos en python:
 crear un entorno:
 ```python
-python -m venv <nombre-entorno>
+python -m venv <nombre-entorno>  #es recomendable que se llame ".venv"
 ```
 
 Activar un entorno:
@@ -80,6 +72,12 @@ Desactivar un entorno:
 ```python
 deactivate
 ```
+### instalar los modulos necesarios para el entorno
+Para poder todas las librerias necesarias de putazo ejecutar el siguiente comando:
+```python
+pip install -r requirements.txt
+```
+
 
 ## Documentación
 ### tkinter
