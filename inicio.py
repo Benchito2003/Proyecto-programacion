@@ -39,9 +39,10 @@ class Vinicio(CTk):
 
         # marcos
         ## marco 2: marco de la ventana principal
-        self.marco2 = principal.FrPrincipal(master=self) 
+        self.marco2 = principal.FrPrincipal(self)
         ## marco 1: ingreso de usuario
         self.marco1 = login.FrLogin(self, self.marco2)
+        self.marco1.add_observer(self.marco2) # añadimos al marco 2 como observador del marco 1
         ## Marco 0: Presentación del programa
         self.marco0 = marco0.Presenteishon(master=self, marco_siguiente=self.marco1)
         self.marco0.grid(column=0, row=0, sticky="nsew", padx=50, pady=50)

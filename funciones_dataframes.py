@@ -35,6 +35,15 @@ def guardar_datos(datos, columnas, df=None):
 def ver_usuarios():
     """ Para ver una lista con todos los usuarios guardados """
 
+def get_datos_usuario(dataframe, codigo, coulmna="Nombre"):
+    """ Trae los datos de un usuario en forma de lista según su código  """
+    """ Datos que puede traer: Nombre, Apellido, Edad """
+    # Leemos el archivo y lo convertimos en dataframe
+    df = dataframe
+    # Indicamos que utilice el código como índice
+    df.set_index('Codigo', inplace=True)
+    dato = df.loc[codigo, coulmna]
+    return dato
 
 
 ## Registros
@@ -62,3 +71,6 @@ if __name__ == "__main__":
     print("Datos leídos desde archivo:")
     print(df_leido)
 
+    ## Ejemplo de traer un solo dato:
+    nombre = get_datos_usuario(df_leido, "Ana", "ciudad")
+    print(f"nombre obtenido: {nombre}")

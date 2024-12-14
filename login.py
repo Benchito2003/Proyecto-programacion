@@ -14,8 +14,11 @@ class FrLogin(customtkinter.CTkFrame):
         self.columnconfigure([0,1], weight=1)
         self.rowconfigure([0,1,2,3,4,5], weight=1)
 
-        # Lista de usuarios
+        # Variabels de control relacionadas a los usuarios
         self.lista_usuarios = self.buscar_usuarios()
+        self.lista_usuarios.append("actualizar")
+        self.usuario_seleccionado = None # Definimos al usuario como una propiedad de la ventana, para que pueda ser consultado como una propiedad de dicho objeto
+        self.lista_observers = []
 
         #Widgets del marco "login"
         ## Etiqueta usuario
@@ -34,34 +37,48 @@ class FrLogin(customtkinter.CTkFrame):
         ## Boton para entrar
         self.b_entrar = CustomButton(self, text="Entrar", command=lambda: f.mostrar_frame(frame_siguiente))
         # self.b_entrar = CustomButton(self, text="Actualizar", command=self.actualizar)
+        # self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
 
-        self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
 
         ## Botón para cerrar
         self.b_cerrar = CustomButton(self, text="Salir de la aplicación", command= lambda: f.cerrar_ventana(master))
         self.b_cerrar.grid(columnspan=2, row=3, padx=4, pady=4)
     
     def buscar_usuarios(self, fichero="usuarios.csv"):
-        if f_df.verificar_archivo(fichero):
+        """ Función para buscar usuarios dentro de un fichero """
+        if f_df.verificar_archivo(fichero): # llamamos a la funcion de dataframe "verificar archivo" para asegurarnos que exista dicho archivo
             df = pd.read_csv(fichero)
-            lista_usuarios = df["Codigo"].tolist()
+            lista_usuarios = df["Codigo"].tolist() # df["Codigo"] trae toda la columna llamada "codigo", mientras que .list() convierte en una lista lo obtenido de la dataframe 
             return lista_usuarios
         else:
             print("No hay dataframe por leer")
             lista_usuarios = ["actualizar"]
             return lista_usuarios
+
+    def add_observer(self, observer):
+        """ Método para añadir observadores a este objeto """
+        self.lista_observers.append(observer)
+
+    def actualizar_codigo(self, codigo):
+        """ Método que permite avisarle a los observadores que el código de usuario se ha actualizado """
+        for observador in self.lista_observers:
+            observador.actualizar_codigo(codigo)
     
     def entrar(self, opcion):
         print(f"tu opción fue: {opcion}")
         if opcion == "actualizar":
             lista_usuarios =  self.buscar_usuarios()
+            lista_usuarios.append("actualizar")
             self.cb_usuario.configure(values=lista_usuarios)
         else:
-            pass
+            self.b_entrar.grid(column=1, row=2, padx=4, pady=4)
+            self.usuario_seleccionado = opcion
+            self.actualizar_codigo(opcion)
     
     def actualizar(self):
-        self.cb_usuario.configure(values=self.buscar_usuarios())
-
+        lista_nueva = self.buscar_usuarios()
+        # lista_nueva.append("actualizar")
+        self.cb_usuario.configure(values=lista_nueva)
 
 # Para probar que todo funcione
 if __name__ == "__main__":

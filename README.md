@@ -22,6 +22,7 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [ ] Crear una función que permita directamente presionar botones epecíficos con la tecla "Enter".
 - [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
+- [ ] Crear una ventana que nos permita hacer una prueba de esfuerzo.
 
 ## Funcionalidades a aclarar:
 - ¿Con qué paleta de colores trabajaremos?

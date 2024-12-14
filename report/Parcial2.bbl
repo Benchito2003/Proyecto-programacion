@@ -1,0 +1,59 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Fro()]{FrontendBackend}
+Frontend y backend: ¿qué son y cuáles son sus diferencias? --- gluo.mx.
+\newblock
+  \url{https://www.gluo.mx/blog/frontend-y-backend-que-son-y-cuales-son-sus-diferencias}.
+\newblock [Accessed 11-10-2024].
+
+\bibitem[tki()]{tkinter}
+{I}nterfaces gráficas de usuario con {T}k --- docs.python.org.
+\newblock \url{https://docs.python.org/es/3/library/tk.html}.
+\newblock [Accessed 15-10-2024].
+
+\bibitem[Ali(2021)]{customtkinter}
+Tariq Ali.
+\newblock customtkinter, 2021.
+\newblock URL \url{https://github.com/TomSchimansky/CustomTkinter}.
+\newblock Accedido: 2024-12-02.
+
+\bibitem[et~al.(2007)]{matplotlib}
+John D.~Hunter et~al.
+\newblock Matplotlib: A 2d graphics environment, 2007.
+\newblock URL \url{https://matplotlib.org}.
+\newblock Accedido: 2024-12-02.
+
+\bibitem[Foundation(2023)]{python}
+Python~Software Foundation.
+\newblock Python programming language, 2023.
+\newblock URL \url{https://www.python.org}.
+\newblock Accedido: 2024-12-02.
+
+\bibitem[fundaciondelcorazon()]{FrecuenciaCardiaca}
+fundaciondelcorazon.
+\newblock {F}recuencia cardiaca --- fundaciondelcorazon.com.
+\newblock
+  \url{https://fundaciondelcorazon.com/prevencion/marcadores-de-riesgo/frecuencia-cardiaca.html}.
+\newblock [Accessed 16-10-2024].
+
+\bibitem[RAE()]{rae_interfaz}
+RAE.
+\newblock interfaz | {D}iccionario de la lengua española --- dle.rae.es.
+\newblock \url{https://dle.rae.es/interfaz}.
+\newblock [Accessed 11-10-2024].
+
+\bibitem[Vivaldi~V and Maldonado~A(2001)]{biomedica_s}
+Ennio~A Vivaldi~V and Pedro Maldonado~A.
+\newblock Computadores en investigación superior biomédica: I. análisis de
+  señales bioelétctricas.
+\newblock \emph{Revista médica de Chile}, 129:\penalty0 955 -- 962, 08 2001.
+\newblock ISSN 0034-9887.
+\newblock URL
+  \url{http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0034-98872001000800016&nrm=iso}.
+
+\end{thebibliography}
