@@ -28,7 +28,7 @@ class FrBienvenida(CustomFrame):
         self.l_paso2.grid(row=4, column=0, columnspan=4, padx=4, pady=4, sticky="w")
 
         ## Botones
-        self.b_empezar = CustomButton(self, text="Empezar Prueba", corner_radius=20, width=200, height=50, command = lambda: f.mostrar_frame(frame_siguiente))
+        self.b_empezar = CustomButton(self, text="Empezar", corner_radius=20, width=200, height=50, command = lambda: f.mostrar_frame(frame_siguiente))
         self.b_empezar.grid(row=5, column=1, columnspan=2, sticky="e")
 
 if __name__ == "__main__":

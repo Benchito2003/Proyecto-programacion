@@ -26,8 +26,8 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.columnconfigure([0, 1, 2], weight=1)
         self.rowconfigure([0,1,2,3,4,5], weight=1)
 
-
-        self.nombre_usuario = "Nombre generico"
+        self.codigo = None
+        self.nombre_usuario = None
 
         # Widgets del Frame principal
         ## Etiqueta menu principal
@@ -37,10 +37,10 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.b_nuevo = CustomButton(self, text="Registrar frecuencia cardiaca", command = lambda: f.abrir_ventana(master, nuevo_registro.VNuevoRegistro))
         self.b_nuevo.grid(row=1, column=0, padx=4, pady=4)
         ## Botón para prueba de esfuerzo
-        self.b_esfuerzo = CustomButton(self, text="Prueba de esfuerzo")
-        self.b_esfuerzo.grid(row=1, column=1, padx=4, pady=4)
+        self.b_prueba = CustomButton(self, text="Medir HRR")
+        self.b_prueba.grid(row=1, column=1, padx=4, pady=4)
         ## Botón para ver registros
-        self.b_ver = CustomButton(self, text="Ver registros", command= lambda:f.abrir_ventana(master, ver_registros.VverRegistros))
+        self.b_ver = CustomButton(self, text="Ver registros", command= self.ventana_registros)
         self.b_ver.grid(row=1, column=2, padx=4,pady=4)
         ## Botón para salir
         self.b_salida = CustomButton(self, text="Salir de la aplicación", command=lambda: f.cerrar_ventana(master))
@@ -55,11 +55,19 @@ class FrPrincipal(customtkinter.CTkFrame):
             return nombre
         else:
             print("Archivo no encontrado")
-    
-    ## función que permite observar si ha cambiado el codigo de usuario
+
     def actualizar_codigo(self, codigo):
+        """ permite observar si ha cambiado el codigo de usuarios """
         archivo = "usuarios.csv"
-        self.titulo.configure(text=f"¿Qué deseas hacer {self.get_usuario(archivo, codigo)}?")
+        self.codigo = codigo
+        self.nombre_usuario = self.get_usuario(archivo,codigo)
+        self.titulo.configure(text=f"¿Qué deseas hacer {self.nombre_usuario}?")
+
+    def ventana_registros(self):
+        """ Función especial para abrir los registros """
+        f.abrir_ventana(self.master, ver_registros.VverRegistros)
+        # Actualizamos el codigo de la ventana de los registros
+        self.master.ventana_abierta.actualizar_datos(self.codigo, self.nombre_usuario)
 
 
 
