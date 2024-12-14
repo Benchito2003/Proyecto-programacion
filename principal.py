@@ -34,7 +34,7 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.titulo = CustomLabel(self, text=f"¿Qué deseas hacer, {self.nombre_usuario}?")
         self.titulo.grid(row=0, columnspan=3, padx=20)
         ## Botón de nuevo registro
-        self.b_nuevo = CustomButton(self, text="Nuevo registro", command = lambda: f.abrir_ventana(master, nuevo_registro.VNuevoRegistro))
+        self.b_nuevo = CustomButton(self, text="Registrar frecuencia cardiaca", command = lambda: f.abrir_ventana(master, nuevo_registro.VNuevoRegistro))
         self.b_nuevo.grid(row=1, column=0, padx=4, pady=4)
         ## Botón para prueba de esfuerzo
         self.b_esfuerzo = CustomButton(self, text="Prueba de esfuerzo")

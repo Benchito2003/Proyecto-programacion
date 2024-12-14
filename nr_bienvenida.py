@@ -17,11 +17,11 @@ class FrBienvenida(CustomFrame):
 
         self.l_paso1_1 = CustomLabel(self,wraplength=300 , text="1.1. Asegurese de estar en un ambiente callado y sin distracciones 2 minutos antes y durante la prueba.")
         self.l_paso1_1.configure(text_color=c5)
-        self.l_paso1_1.grid(row=2, column=1, columnspan=2, padx=4, pady=4, sticky="w")
+        self.l_paso1_1.grid(row=2, column=0, columnspan=2, padx=4, pady=4, sticky="w")
 
         self.l_paso1_2 = CustomLabel(self, text="1.2. Durante la prueba no haga ningún movimiento.")
         self.l_paso1_2.configure(text_color=c5)
-        self.l_paso1_2.grid(row=3, column=1, columnspan=2, padx=4, pady=4, sticky="w")
+        self.l_paso1_2.grid(row=3, column=0, columnspan=2, padx=4, pady=4, sticky="w")
 
         self.l_paso2 = CustomLabel(self, wraplength=400, text="2. Coloque el dedo índice de su mano dominante sobre el sensor durante 20 segundos ininterrumpidos")
         self.l_paso2.configure(font=(fuente, t_fuente+4, "bold"), text_color=c5)
