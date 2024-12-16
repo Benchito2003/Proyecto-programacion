@@ -14,8 +14,10 @@ import funciones_botones as f
 ### Funciones para las fataframes
 import funciones_dataframes as f_df
 ### ventanas que van a surgir de esta clase
-import ver_registros
 import nuevo_registro
+import recuperacion_cardiaca
+import ver_registros
+
 
 # Marco del programa principal
 class FrPrincipal(customtkinter.CTkFrame):
@@ -37,7 +39,7 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.b_nuevo = CustomButton(self, text="Registrar frecuencia cardiaca", command = lambda: f.abrir_ventana(master, nuevo_registro.VNuevoRegistro))
         self.b_nuevo.grid(row=1, column=0, padx=4, pady=4)
         ## Botón para prueba de esfuerzo
-        self.b_prueba = CustomButton(self, text="Medir HRR")
+        self.b_prueba = CustomButton(self, text="Medir HRR", command= lambda: f.abrir_ventana(master, recuperacion_cardiaca.VHRR))
         self.b_prueba.grid(row=1, column=1, padx=4, pady=4)
         ## Botón para ver registros
         self.b_ver = CustomButton(self, text="Ver registros", command= self.ventana_registros)
@@ -64,7 +66,7 @@ class FrPrincipal(customtkinter.CTkFrame):
         self.titulo.configure(text=f"¿Qué deseas hacer {self.nombre_usuario}?")
 
     def ventana_registros(self):
-        """ Función especial para abrir los registros """
+        """ Función especial para abrir los registros, por cuestiones de variables y objetos """
         f.abrir_ventana(self.master, ver_registros.VverRegistros)
         # Actualizamos el codigo de la ventana de los registros
         self.master.ventana_abierta.actualizar_datos(self.codigo, self.nombre_usuario)

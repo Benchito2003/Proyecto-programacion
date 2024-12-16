@@ -18,11 +18,16 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
     - [x] Para datos de usuario (con los datos capturados) 
     - [ ] para las  rutas donde estan guardadas las frecuencias cardiacas relacionadas con sus fechas.
 - [x] Crear una función que permita guardar los datos capturados en la dataframe.
-- [ ] Crear una función que nos permita entrar los datos del usuario especificado.
+- [x] Crear una función que nos permita entrar los datos del usuario especificado.
 - [ ] Crear una función que permita directamente presionar botones epecíficos con la tecla "Enter".
-- [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
-- [ ] Crear una ventana que nos permita hacer una prueba de esfuerzo.
+- [x] Crear una ventana que nos permita hacer una prueba de esfuerzo.
+- [ ] Crear un progama que permita obtener datos de sensor.
+    - [ ] Comunicarse con el sensor
+    - [ ] Decirle al sensor que guarde los datos en un archivo de texto.
+    - [ ] Obtener los datos del sensor.
+    - [ ] Graficar los datos.
+    - [ ] Calcular frecuencia cardiaca.
 
 ## Funcionalidades a aclarar:
 - ¿Con qué paleta de colores trabajaremos?

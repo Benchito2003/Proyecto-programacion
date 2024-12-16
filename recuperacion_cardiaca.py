@@ -4,6 +4,7 @@ import funciones_botones as f
 from config import *
 
 # Módulos específicos
+import rc_bienvenida, rc_captura, rc_instrucciones, rc_resultados
 
 # Ventana nueva para el registrar el índice de recuperación cardiaca
 class VHRR(customtkinter.CTkToplevel): # Ventana de Hearth Rate Recovery
@@ -16,17 +17,31 @@ class VHRR(customtkinter.CTkToplevel): # Ventana de Hearth Rate Recovery
         self.title("Nuevo Registro")
         self.config(bg=c1)
         ## Configuraciones del grid
-        self.columnconfigure([0, 1, 2], weight=1)
-        self.rowconfigure([0,1,2,3,4,5], weight=1)
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(0, weight=1)
 
         """ 
-        La ventana consta de 5 frames: 
-            1. Indiciaciones.
-            2. Primera captura (en reposo).
-            3. Segunda captura (despues de hacer ejericio).
-            4. Tercera captura (despues del descanso).
-            5. Presentación de resultados.
+        La ventana consta de 4 frames: 
+            1. Explicación.
+            2. Indicación del ejercicio.
+            3. Captura de frecuencias.
+            4. Resultado de las prueba.
         """
+
+        # Widgets
+        ## Frames:
+        ### Marco de explicación
+        self.marco1 = rc_bienvenida.FrBienvenida(self)
+        self.marco1.grid(row=0, column=0, sticky="nsew")
+        ### Marco de las instrucciones
+        self.marco2 = rc_instrucciones.FrInstrucciones(self)
+        self.marco2.set_anterior(self.marco1)
+        self.marco1.set_siguiente(self.marco2) # El marco 2 es el que le sigue al marco 1 y asi sucesivamente
+        ### Marco de captura de frecuencias
+        self.marco3 = rc_captura.FrCapturaFrecuencias(self)
+        self.marco2.set_siguiente(self.marco3)
+        ### Marco de resultados
+        self.marco4 = rc_resultados.FrResultados(self)
 
 if __name__ == "__main__":
     class App(customtkinter.CTk):

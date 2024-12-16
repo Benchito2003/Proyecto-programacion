@@ -6,17 +6,23 @@ class FrCaptura(CustomFrame):
         super().__init__(master, **kwargs)
 
         #Variables de control
-        self.tiempo=20
+        self.tiempo=5
         
         # Widgets
-        self.l_titulo = CustomLabel(self, text="Captura de frecuencia cardiaca")
+        ## Etiquetas
+        self.l_titulo = CustomLabel(self, text="Captura de frecuencia cardiaca en reposo")
+        self.l_titulo.configure(font=(fuente, t_fuente+4, "bold"))
         self.l_titulo.grid(row=0, column=0, columnspan=3)
 
         self.l_tiempo = CustomLabel(self, text=f"{self.tiempo}")
         self.l_tiempo.configure(font=(fuente, 25), fg_color=c_blanco, text_color=c_negro, corner_radius=20)
         self.l_tiempo.grid(row=1, column=1, sticky="nsew")
 
-        # Botones
+        ### texto de relleno
+        self.l_texto = CustomLabel(self, wraplength=400, text="Trate de no hacer movimientos bruscos ni de quitar el dedo del sensor")
+        self.l_recuerdo = CustomLabel(self, wraplength=400, text="Coloque su dedo en el sensor y presione el botón 'Empezar'")
+
+        ## Botones
         self.b_iniciar = CustomButton(self, text="Iniciar", command= lambda: self.cuenta_regresiva(self.tiempo))
         self.b_iniciar.grid(row=2, column=1)
 
@@ -31,12 +37,14 @@ class FrCaptura(CustomFrame):
     def cuenta_regresiva(self, tiempo):
         """ Función para una cuenta regresiva :o """
         self.b_iniciar.grid_forget()
+        self.l_texto.grid(row=2, column=1)
         if tiempo > 0:
             self.l_tiempo.configure(text=f"{tiempo}")
             self.after(1000, self.cuenta_regresiva, tiempo-1) 
             # La función se llama así misma cada 1000 ms y recibe de argumento el tiempo anterior menos 1
         else:
             self.l_tiempo.configure(text="Prueba terminada")
+            self.l_texto.grid_forget()
             self.b_siguiente.grid(row=3, column=1)
             self.b_reiniciar.grid(row=4, column=1)
     
