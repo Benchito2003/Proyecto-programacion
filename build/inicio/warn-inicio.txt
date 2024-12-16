@@ -15,10 +15,10 @@ IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
             tracking down the missing module yourself. Thanks!
 
 missing module named winreg - imported by importlib._bootstrap_external (conditional), platform (delayed, optional), darkdetect._windows_detect (top-level), mimetypes (optional), urllib.request (delayed, conditional, optional), platformdirs.windows (delayed, optional), matplotlib.font_manager (delayed), matplotlib (delayed, conditional), setuptools._distutils._msvccompiler (top-level), setuptools.msvc (conditional)
-missing module named nt - imported by os (delayed, conditional, optional), ntpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), ctypes (delayed, conditional)
+missing module named nt - imported by shutil (conditional), importlib._bootstrap_external (conditional), ntpath (optional), os (delayed, conditional, optional), ctypes (delayed, conditional)
 missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
 excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level)
-missing module named _winapi - imported by encodings (delayed, conditional, optional), ntpath (optional), shutil (conditional), subprocess (conditional), mimetypes (optional), multiprocessing.connection (optional), multiprocessing.spawn (delayed, conditional), multiprocessing.reduction (conditional), multiprocessing.shared_memory (conditional), multiprocessing.heap (conditional), multiprocessing.popen_spawn_win32 (top-level), asyncio.windows_events (top-level), asyncio.windows_utils (top-level)
+missing module named _winapi - imported by encodings (delayed, conditional, optional), shutil (conditional), ntpath (optional), subprocess (conditional), mimetypes (optional), multiprocessing.connection (optional), multiprocessing.spawn (delayed, conditional), multiprocessing.reduction (conditional), multiprocessing.shared_memory (conditional), multiprocessing.heap (conditional), multiprocessing.popen_spawn_win32 (top-level), asyncio.windows_events (top-level), asyncio.windows_utils (top-level)
 missing module named vms_lib - imported by platform (delayed, optional)
 missing module named 'java.lang' - imported by platform (delayed, optional)
 missing module named java - imported by platform (delayed)
@@ -45,6 +45,8 @@ missing module named jaraco.text.yield_lines - imported by setuptools._vendor.ja
 missing module named _manylinux - imported by packaging._manylinux (delayed, optional), setuptools._vendor.packaging._manylinux (delayed, optional), wheel.vendored.packaging._manylinux (delayed, optional)
 missing module named trove_classifiers - imported by setuptools.config._validate_pyproject.formats (optional)
 missing module named pyimod02_importers - imported by /home/chino/Documentos/Proyecto-programacion/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py (delayed), /home/chino/Documentos/Proyecto-programacion/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgres.py (delayed)
+missing module named 'System.IO' - imported by serial.serialcli (top-level)
+missing module named System - imported by serial.serialcli (top-level)
 missing module named six.moves.range - imported by six.moves (top-level), dateutil.rrule (top-level)
 runtime module named six.moves - imported by dateutil.tz.tz (top-level), dateutil.tz._factories (top-level), dateutil.tz.win (top-level), dateutil.rrule (top-level)
 missing module named six.moves.winreg - imported by six.moves (top-level), dateutil.tz.win (top-level)
