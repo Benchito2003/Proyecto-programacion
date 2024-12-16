@@ -1,12 +1,13 @@
 from config import *
 import funciones_botones as f
+import leer_pico as read
 
 class FrCaptura(CustomFrame):
     def __init__(self, master, frame_siguiente, **kwargs):
         super().__init__(master, **kwargs)
 
         #Variables de control
-        self.tiempo=5
+        self.tiempo=30
         
         # Widgets
         ## Etiquetas
@@ -26,6 +27,9 @@ class FrCaptura(CustomFrame):
         self.b_iniciar = CustomButton(self, text="Iniciar", command= lambda: self.cuenta_regresiva(self.tiempo))
         self.b_iniciar.grid(row=2, column=1)
 
+        self.b_calcular = CustomButton(self, text="Calcular", command=self.calcular)
+        self.b_calcular.grid(row=2, column=0)
+
         self.b_siguiente = CustomButton(self, text="siguiente", command= lambda: f.mostrar_frame(frame_siguiente))
 
         self.b_reiniciar = CustomButton(self, text="reinicar prueba", command=self.reinicio)
@@ -38,6 +42,7 @@ class FrCaptura(CustomFrame):
         """ Función para una cuenta regresiva :o """
         self.b_iniciar.grid_forget()
         self.l_texto.grid(row=2, column=1)
+        # frecuencia = read.obtener_frecuencia(self.tiempo)
         if tiempo > 0:
             self.l_tiempo.configure(text=f"{tiempo}")
             self.after(1000, self.cuenta_regresiva, tiempo-1) 
@@ -47,6 +52,11 @@ class FrCaptura(CustomFrame):
             self.l_texto.grid_forget()
             self.b_siguiente.grid(row=3, column=1)
             self.b_reiniciar.grid(row=4, column=1)
+    
+    def calcular(self):
+        frecuencia = read.obtener_frecuencia(self.tiempo)
+        self.l_tiempo.configure(text=f"{frecuencia} lpm")
+        
     
     def reinicio(self):
         self.l_tiempo.configure(text=f"{self.tiempo}")

@@ -7,8 +7,8 @@ class FrCapturaFrecuencias(CustomFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
-        self.tiempo_espera = 5
-        self.tiempo_primer_registro = 4
+        self.tiempo_espera = 120
+        self.tiempo_primer_registro = 90
         self.tiempo_segundo_registro = 1
 
         # Widgets

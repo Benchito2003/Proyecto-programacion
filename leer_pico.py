@@ -31,8 +31,8 @@ def calculate_heart_rate(ir_data, sampling_rate=10):
     avg_interval = sum(intervals) / len(intervals)
     return round(60 / avg_interval)
 
-def obtener_frecuencia(tiempo):
-    ir_data = read_from_pico(port="/dev/ttyACM0", tiempo=tiempo)
+def obtener_frecuencia(time):
+    ir_data = read_from_pico(port="/dev/ttyACM0", tiempo=time)
     frecuencia = calculate_heart_rate(ir_data)
     return frecuencia
 
@@ -41,3 +41,4 @@ if __name__ == "__main__":
     ir_data = read_from_pico(port="/dev/ttyACM0")  # Cambia "COM3" por el puerto de tu Pico
     bpm = calculate_heart_rate(ir_data)
     print(f"Frecuencia cardíaca: {bpm} BPM")
+    print (type(bpm))
