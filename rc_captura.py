@@ -2,13 +2,14 @@
 from config import *
 import funciones_botones as fb
 import funciones_dataframes as fdf
+import leer_pico
 
 class FrCapturaFrecuencias(CustomFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
-        self.tiempo_espera = 120
-        self.tiempo_primer_registro = 90
+        self.tiempo_espera = 60
+        self.tiempo_primer_registro = 59
         self.tiempo_segundo_registro = 1
 
         # Widgets
@@ -55,6 +56,7 @@ class FrCapturaFrecuencias(CustomFrame):
     # Funciones propias de la clase
     def comenzar(self):
         """ Funciones de comenzar """
+        
         # 1. Ocultamos el botón de comenzar y la nota de recuerdo
         self.b_comenzar.grid_forget()
         self.l_recuerdo.grid_forget()
@@ -70,9 +72,12 @@ class FrCapturaFrecuencias(CustomFrame):
             self.l_tiempo_espera.configure(text=f"{tiempo}")
             if tiempo == self.tiempo_primer_registro:
                 self.l_nota1.grid(row=2, column=0)
-                self.l_primer_frecuencia.configure(text="200 lpm")
+                latido1 = leer_pico.obtener_frecuencia(10)
+                self.l_nota1.configure(text=f"Tu frecuencia cardiaca máxima fue de {latido1} lpm, cuando la recomendable para tu edad es: {200 - 20}")
+                self.l_primer_frecuencia.configure(text=f"{latido1} lpm")
             if tiempo == self.tiempo_segundo_registro:
-                self.l_segunda_frecuencia.configure(text="100 lpm")
+                latido2 = leer_pico.obtener_frecuencia(10)
+                self.l_segunda_frecuencia.configure(text=f"{latido2} lpm")
             self.after(1000, self.cuenta_regresiva, tiempo -1)
         else:
             self.l_tiempo_espera.configure(text="ya puedes retirar el dedo", font=(fuente, t_fuente))

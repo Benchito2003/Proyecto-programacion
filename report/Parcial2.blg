@@ -3,54 +3,60 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Parcial2.aux
 The style file: plainnat.bst
 Database file #1: referencias2.bib
+Warning--entry type for "raspberryref" isn't style-file defined
+--line 90 of file referencias2.bib
+Warning--entry type for "max30100" isn't style-file defined
+--line 95 of file referencias2.bib
 A bad cross reference---entry "biomedica_s"
 refers to entry "10.4067/S0034-98872001000800016", which doesn't exist
 Warning--I didn't find a database entry for "10.4067/S0034-98872001000800016"
 Warning--to sort, need author or key in FrontendBackend
 Warning--to sort, need author or key in tkinter
+Warning--to sort, need author or key in max30100
+Warning--to sort, need author or key in raspberryref
 Warning--empty year in FrontendBackend
 Warning--empty year in tkinter
 Warning--empty year in FrecuenciaCardiaca
 Warning--empty year in rae_interfaz
-You've used 8 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            639 strings with 6141 characters,
-and the built_in function-call counts, 2535 in all, are:
-= -- 237
+            645 strings with 6349 characters,
+and the built_in function-call counts, 3010 in all, are:
+= -- 283
 > -- 71
 < -- 6
-+ -- 29
++ -- 31
 - -- 21
-* -- 141
-:= -- 360
-add.period$ -- 31
-call.type$ -- 8
-change.case$ -- 31
-chr.to.int$ -- 8
-cite$ -- 24
-duplicate$ -- 125
-empty$ -- 272
+* -- 172
+:= -- 399
+add.period$ -- 35
+call.type$ -- 10
+change.case$ -- 36
+chr.to.int$ -- 10
+cite$ -- 32
+duplicate$ -- 155
+empty$ -- 342
 format.name$ -- 29
-if$ -- 556
+if$ -- 674
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 1
-newline$ -- 55
+newline$ -- 63
 num.names$ -- 24
-pop$ -- 108
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 27
 quote$ -- 0
-skip$ -- 91
+skip$ -- 120
 stack$ -- 0
-substring$ -- 45
-swap$ -- 9
+substring$ -- 51
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 6
+type$ -- 110
+warning$ -- 8
 while$ -- 19
 width$ -- 0
-write$ -- 114
+write$ -- 133
 (There was 1 error message)

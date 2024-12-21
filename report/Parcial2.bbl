@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,16 @@ Frontend y backend: ¿qué son y cuáles son sus diferencias? --- gluo.mx.
 {I}nterfaces gráficas de usuario con {T}k --- docs.python.org.
 \newblock \url{https://docs.python.org/es/3/library/tk.html}.
 \newblock [Accessed 15-10-2024].
+
+\bibitem[max(2024)]{max30100}
+Max30100 datasheet (pdf) - maxim integrated products, 2024.
+\newblock URL
+  \url{https://www.alldatasheet.es/datasheet-pdf/view/879178/MAXIM/MAX30100.html}.
+
+\bibitem[ras(2024)]{raspberryref}
+2024.
+\newblock URL
+  \url{https://www.raspberrypi.com/documentation/microcontrollers/}.
 
 \bibitem[Ali(2021)]{customtkinter}
 Tariq Ali.

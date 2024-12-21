@@ -1,8 +1,15 @@
-\documentclass[16pt]{report}
+\documentclass[16pt]{article}
 
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc} % Para codificación de fuentes
+\usepackage[spanish, english]{babel}
+%\usepackage{fontspec}
+
+%\usepackage{lmodern}
+%\usepackage{microtype}
+
+%\setmainfont{Times New Roman} 
 
 % citas:
 %\usepackage{cite}
@@ -22,7 +29,7 @@
 	\vspace{3cm}
 	{\scshape\Huge Interfaz para un filtro de frecuencia cardiáca. \par}
 	\vspace{2cm}
-	{\itshape\Large Proyecto. \par}
+	{\itshape\Large Ordindario. \par}
 	\vfill
 	{\Large Autores: \par}
 	{\Large Caballero Trinidad Flor Isabel. \\ Cortés Ramírez Samuel Jefte. \\ García García Ian Pablo. \\ Pérez Roldan Eduardo Alejandro. \\ Cabañas Alba Alejandro. \\ Alfonso Gamboa Rubén. \par}
@@ -31,9 +38,28 @@
 
 
 % Cuerpo del reporte
-\chapter{Parcial 2}
-\section{keywords}
-Frecuencia cardaica, Interfaz, Filtro de frecuencia cardaiaca, Interfaz para un filtro, SPython, Interfaz Médica, Ingeniería Biomédica, Arduino.
+\selectlanguage{spanish}
+\begin{abstract}
+	El monitoreo preciso de la frecuencia ciaca es esencial para evaluar el estado de salud cardiovascular, particularmente en contextos clínicos y preventivos. Este proyecto desarrolla una interfaz gráfica avanzada para la visualización y procesamiento de datos de frecuencia cardiaca, diseñada mediante programación orientada a objetos en Python. Utilizando el sensor óptico Max 30100 y una placa Raspberry pi pico, se capturan señales cardiacas que, tras ser procesadas mediante filtros específicos desarrollados con apoyo de especialistas en instrumentación electrónica, son graficadas y analizadas. El sistema emplea bibliotecas como TkInter y CustomTkInter para la creación de una interfaz interactiva, y Matplotlib para la representación de datos en tiempo real.
+	
+	El diseño modular del software optimiza la reutilización y escalabilidad del código, mientras que el uso de control de versiones con Git y GitHub garantiza trazabilidad y colaboración efectiva. Este desarrollo no solo facilita el análisis de señales biomédicas, sino que también incluye funcionalidades para el cálculo de la recuperación cardiaca y la gestión de registros históricos en formato CSV. Además, el proyecto establece una base técnica para futuras aplicaciones en telemedicina, al combinar principios de ingeniería biomédica y tecnologías accesibles. Este trabajo responde a la creciente demanda de herramientas no invasivas y confiables para el monitoreo de parámetros fisiológicos.
+	
+	\paragraph{Palabras clave:}
+	Frecuencia cardiaca, Interfaz, Filtro de frecuencia cardiaca, Interfaz para un filtro, SPython, Interfaz Médica, Ingeniería Biomédica, Raspberry pi pico.
+	
+	
+\end{abstract}
+
+\selectlanguage{english}
+\begin{abstract}
+	The precise monitoring of heart-rate is essential to asses the cardiovascular health status of patients, particularly in a clinical or preventive context. This project develops an advanced graphical interface for the visualization and data processing of a heart beat signal, designed through object-oriented programming powered by Python. With the MAX-30100 optical sensor and an Raspberry pi pico plate, signals are captured after being processed through specific filters developed by specialists in the area of electronic instrumentation, plotted and analyzed. The system employs libraries such as Tkinter and Custom Tkinter for the creation of an interactive interface, and Matplotlib to visualize real time data.
+	
+	The modular design of the software optimices the reusability and scalability of the script, whilst the management of Git and GitHub versions guarantees traceability and effective collaboration. This type of development not only ensures biomedical signals analysis, but includes features to calculate the recovery heart rate, and the management of historical records in .CSV format. Furthermore, this project stablishes a technical foundation for future applications in Telemedicine, by merging biomedical engineering principles and low-cost technologies. Our work responds the growing demand of non-invasive and reliable tools for physiological parameters monitoring.
+	
+	\paragraph{Keywords:}
+	Heart rate , Interface, Heart rate Filter, Interface for a Filter, SPython, Medical Interface, Biomedical Engineering, Raspberry pi pico.
+\end{abstract}
+\selectlanguage{spanish}
 
 \section{Introducción.}
 El siguiente proyecto tiene como finalidad responder a la pregunta ¿Cómo desarrollar una interfaz que facilite la visualización y procesamiento de datos de la frecuencia cardiaca?, teniendo como principal objetivo visualizar la frecuencia cardiaca del usuario mediante una interfaz a partir del lenguaje de programación Python \cite{python}. 
@@ -55,14 +81,14 @@ En esta sección se elabora una revisión bibliográfica de los conceptos genera
 \section{Metodología.}
 Se utilizará el lenguaje de programación Python \cite{python} para la aplicación principal. Se utilizará la librería “TkInter”\cite{tkinter} y la librería "Custom TkInter" \cite{customtkinter} para el diseño de una interfaz "amigable" con el usuario.\\
 Para el despliegue de las gráficas de pulso cardiaco se utilizará la librería matplotlib \cite{matplotlib}. \\
-Para la obtención de las señales cardiacas se utilizará un sensor "Max 30100” (figura \ref{sensor}) y una placa arduino uno (figura \ref{arduino}) con el cual se medirá el pulso cardiaco de una persona; para la comunicación se utilizara un programa por aparte heco en python. Posteriormente guardarlo en un archivo “csv", dicho archivo pasará por un filtro realizado por nuestros compañeros de instrumentación electrónica para así entregarnos una señal legible y más limpia; para posteriormente ser gráficada en nuestra aplicación.\\
+Para la obtención de las señales cardiacas se utilizará un sensor "Max 30100” \cite{max30100} (figura \ref{sensor}) y una placa Raspberry pi pico \cite{raspberryref} (figura \ref{raspberry}) con el cual se medirá el pulso cardiaco de una persona; para la comunicación se utilizara un programa por aparte heco en python. Posteriormente guardarlo en un archivo “csv", dicho archivo pasará por un filtro realizado por nuestros compañeros de instrumentación electrónica para así entregarnos una señal legible y más limpia; para posteriormente ser gráficada en nuestra aplicación.\\
 Para una mejor organización y para un control se versiones, se usará git y github. Publicado en: https://github.com/Benchito2003/Proyecto-programacion.git.
 
 \begin{figure}[h]
-	\caption{Placa arduino uno}
+	\caption{Placa Raspberry pi pico}
 	\centering
-	\includegraphics[width=0.5\textwidth]{pictures/placa-arduino}
-	\label{arduino}
+	\includegraphics[width=0.5\textwidth]{pictures/pipico}
+	\label{raspberry}
 \end{figure}
 
 
@@ -75,7 +101,7 @@ Para una mejor organización y para un control se versiones, se usará git y git
 
 \subsection{Funcionamiento del código} El código se empezó a programar con ayuda de la programación orientada a objetos, donde cada ventana, frame o widget es en realidad una clase (o molde) hecho por nosotros, de manera que simplemente los mandamos a llamar, algunas carácterísticas generales de estas clases son: que comparten la misma paleta de colores, comparten la misma fuente, sus módulos pueden ser ejecutados ahí mismo para testear que dicho módulo esté funcionando correctamente. \\
 Para ésto, la documentacón de Custom Tkinter \cite{customtkinter}, cuenta con varios ejemplos ilustrativos de como podemos trabajar con sus clases orientadas a objetos, por lo que nosotros lo que lo unico que se ralizó fue heredar de éstas clases sus métodos y características (osease heredados).
-\subsubsection{colores}
+\subsubsection{Colores}
 Figura: \ref{colores}. Primeramente se hicieron varios conjuntos de colores en forma de listas, para poder escoger a futuro, el color que le quedaría mejor a nuestra interfaz, pudiendo establecer desde un principio la paleta con la que iremos trabajando.
 \begin{figure}[h!]
 	\caption{módulo "colores.py"}
@@ -84,7 +110,7 @@ Figura: \ref{colores}. Primeramente se hicieron varios conjuntos de colores en f
 	\label{colores}
 \end{figure}
 
-\subsubsection{config}
+\subsubsection{Config}
 Importamos custom tkinter \cite{customtkinter} \\
 El módulo config (figura \ref{config}) es un módulo donde creamos clases o moldes para nuestros botones, etiquetas, entre otros; dejando que hereden lo importante de custom tkinter \cite{customtkinter} y después asignandoles nuestros propios "Valores por defecto". Les asignamos colores acorde a la paleta de colores asiganada y ya están listos para ser usados por el resto del programa. Así se ahorra el repetir bastante código, y en caso de ser necesario un cambio hacia todas las etiquetas, se puede hacer directamente desde este módulo. 
 
@@ -105,7 +131,7 @@ Para la construcción de cada frame (figura \ref{frames}), solo se llama desde e
 	\label{frames}
 \end{figure}
 
-\subsubsection{funciones}
+\subsubsection{Funciones}
 En un móulo aparte llamado "funciones botones.py"(figura \ref{funciones}) , se dejaron las funciones más utilizadas por las demás frames a la hora de usar botones, como lo son: mostrar el siguiente frame, cerrar la ventana, etc.
 
 \begin{figure}[h!]
@@ -115,7 +141,7 @@ En un móulo aparte llamado "funciones botones.py"(figura \ref{funciones}) , se 
 	\label{funciones}
 \end{figure}
 
-\subsubsection{ventanas emergentes}
+\subsubsection{Ventanas emergentes}
 Para la creación de una ventana emergente (figura \ref{ventana}), se siguen los consejos de la documentación de custom tkinter \cite{customtkinter}, donde ya únicamente le agregamos funciones propias de cada ventana y le creamos frames a partir de las clases que previamente hicimos.
 
 
@@ -135,8 +161,29 @@ El módulo principal es el cual se va a ejecutar y llamara como tal a todo el pr
 	\label{inicio}
 \end{figure}
 
-\subsection{resultados (previos)}
-Al ejecutar el módulo principal "inicio.py" (figura \ref{inicio}), se mostrara una imagen con la presentacion del programa (figura \ref{presentacion}), posteriormente tenemos un menú (figura \ref{menu}) en el cual podemos escoger si crear un nuevo usuario o entrar con uno ya creado a partir de su código de usuario. En caso de querer crear un usuario nuevo se abrirá una ventana para poder crear el usuario (figura \ref{nuevousuario}). En caso de haber ingresado con un usuario, llegamos a una ventana principal (figura \ref{vprincipal}) donde puede escoger entre hacer un nuevo registro, hacer una prueba de esfuerzo o graficar los registros que tenga. \\
+\subsection{Sensor}
+Para capturar los datos del sensor se utilizó el protocolo i2c, mientras que para obtener los datos del raspberry pi pico, se utilizó el protocolo en serie USB y micropython.
+
+\section{Resultados}
+Al ejecutar el módulo principal "inicio.py" (figura \ref{inicio}), se mostrara una imagen con la presentacion del programa (figura \ref{presentacion}), posteriormente tenemos un menú (figura \ref{menu}) en el cual podemos escoger si crear un nuevo usuario o entrar con uno ya creado a partir de su código de usuario. En caso de querer crear un usuario nuevo se abrirá una ventana para poder crear el usuario (figura \ref{nuevousuario}). En caso de haber ingresado con un usuario, llegamos a una ventana principal (figura \ref{vprincipal}) donde puede escoger entre hacer un nuevo registro, hacer una prueba de esfuerzo o revisar los registros que tenga guardados. \\
+Para obtener los datos del sensor, simplemente se conectan unos jumpers en las correspondientes entradas de: tierra, voltaje, scl y sda (figura \ref{circuito}).
+Finalmente: Un ejemplo de toma de datos del sensor: figura \ref{circuito} \\
+\paragraph{Video del programa funcionando: }
+https://youtu.be/bcCE4S82T54?si=CXCuJVnj22A9Ec1v
+
+\begin{figure}[h!]
+	\caption{Raspberry pi pico conectado a la computadora y al sensor max30100 }
+	\centering
+	\includegraphics[width=1\textwidth]{pictures/circuito}
+	\label{circuito}
+\end{figure}
+
+\begin{figure}[h!]
+	\caption{Captura de datos con sensor max30100 y raspberry pi pico}
+	\centering
+	\includegraphics[width=1\textwidth]{pictures/prueba}
+	\label{prueba}
+\end{figure}
 
 
 \begin{figure}[h!]
@@ -167,6 +214,9 @@ Al ejecutar el módulo principal "inicio.py" (figura \ref{inicio}), se mostrara 
 	\label{vprincipal}
 \end{figure}
 
+
+\section{Conclusiones}Este Proyecto nos sirvió para entender cómo realizar interfaces gráficas en Python a través de varias librerías. Este proyecto estuvo enfocado en un ámbito médico similar al que nos enfrentaremos en el ámbito laboral. Durante este proyecto se utilizaron herramientas externas a Python para la implementación de lectura de los signos vitales, lo cual fue útil para entender de mejor manera la conexión serial con un Raspberry Pi y cómo este trabaja en conjunto con Python.
+Al final, se obtuvo una interfaz que cumplió con los objetivos propuestos con anterioridad, mostrando el ritmo cardíaco y registrándolo para su uso futuro. Esta experiencia no solo fortaleció nuestras habilidades técnicas en el desarrollo de software y hardware, sino que también nos proporcionó una comprensión más profunda de las aplicaciones prácticas de estas tecnologías en el ámbito de la salud. La integración de diferentes tecnologías y la solución de problemas durante el desarrollo del proyecto nos preparan mejor para enfrentar desafíos similares en nuestra carrera profesional. En resumen, este proyecto ha sido una oportunidad invaluable para aplicar conocimientos teóricos en un contexto práctico, reforzando así nuestra confianza y competencia en la creación de soluciones tecnológicas innovadoras para el campo médico.
 
 \bibliographystyle{plainnat}
 \bibliography{referencias2}
