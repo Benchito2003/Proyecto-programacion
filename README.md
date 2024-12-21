@@ -23,11 +23,10 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
 - [x] Crear una ventana que nos permita hacer una prueba de esfuerzo.
 - [ ] Crear un progama que permita obtener datos de sensor.
-    - [ ] Comunicarse con el sensor
-    - [ ] Decirle al sensor que guarde los datos en un archivo de texto.
-    - [ ] Obtener los datos del sensor.
+    - [x] Comunicarse con el sensor
+    - [x] Obtener los datos del sensor.
     - [ ] Graficar los datos.
-    - [ ] Calcular frecuencia cardiaca.
+    - [x] Calcular frecuencia cardiaca.
 
 ## Funcionalidades a aclarar:
 - ¿Con qué paleta de colores trabajaremos?
