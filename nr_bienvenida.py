@@ -4,16 +4,19 @@ import funciones_botones as f
 class FrBienvenida(CustomFrame):
     def __init__(self, master, frame_siguiente, **kwargs):
         super().__init__(master, **kwargs)
+
+        self.columnconfigure([0, 1, 2, 3, 4], weight=1)
         
         # Widgets
         ## Etiquetas
+        ### Título
         self.l_titulo = CustomLabel(self, text="Instrucciones")
         self.l_titulo.configure(font=(fuente, t_fuente+4, "bold"))
-        self.l_titulo.grid(row=0, columnspan=4, padx=20, pady=20)
-
-        self.l_paso1 = CustomLabel(self, text="1. Para realizar el registro es necesario estar sentado.")
+        self.l_titulo.grid(row=0, column=0, columnspan=5, padx=20, pady=20)
+        ### Explicación de los pasos
+        self.l_paso1 = CustomLabel(self, text="1. Para realizar el registro es necesario estar sentad@.")
         self.l_paso1.configure(font=(fuente, t_fuente+4, "bold"), text_color=c5)
-        self.l_paso1.grid(row=1, columnspan=4, padx=4, pady=4, sticky="w")
+        self.l_paso1.grid(row=1, column=1, padx=4, pady=4, sticky="w")
 
         self.l_paso1_1 = CustomLabel(self,wraplength=300 , text="1.1. Asegurese de estar en un ambiente callado y sin distracciones 2 minutos antes y durante la prueba.")
         self.l_paso1_1.configure(text_color=c5)
@@ -25,11 +28,11 @@ class FrBienvenida(CustomFrame):
 
         self.l_paso2 = CustomLabel(self, wraplength=400, text="2. Coloque el dedo índice de su mano dominante sobre el sensor durante 20 segundos ininterrumpidos")
         self.l_paso2.configure(font=(fuente, t_fuente+4, "bold"), text_color=c5)
-        self.l_paso2.grid(row=4, column=0, columnspan=4, padx=4, pady=4, sticky="w")
+        self.l_paso2.grid(row=4, column=1, padx=4, pady=4, sticky="w")
 
         ## Botones
-        self.b_empezar = CustomButton(self, text="Empezar Prueba", corner_radius=20, width=200, height=50, command = lambda: f.mostrar_frame(frame_siguiente))
-        self.b_empezar.grid(row=5, column=1, columnspan=2, sticky="e")
+        self.b_empezar = CustomButton(self, text="Siguiente", corner_radius=20, width=200, height=50, command = lambda: f.mostrar_frame(frame_siguiente))
+        self.b_empezar.grid(row=5, column=3, columnspan=2, sticky="e")
 
 if __name__ == "__main__":
     class App(customtkinter.CTk):
