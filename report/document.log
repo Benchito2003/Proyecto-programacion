@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.10)  11 NOV 2024 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.11)  2 DEC 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,20 +6,19 @@ entering extended mode
 (./document.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(/usr/share/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
-\c@chapter=\count189
-\c@section=\count190
-\c@subsection=\count191
-\c@subsubsection=\count192
-\c@paragraph=\count193
-\c@subparagraph=\count194
-\c@figure=\count195
-\c@table=\count196
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -29,24 +28,33 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count197
+\babel@savecnt=\count196
 \U@D=\dimen141
-\l@unhyphenated=\language8
+\l@unhyphenated=\language5
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count198
+\bbl@dirlevel=\count197
 
 (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Spanish' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 51.
+
+Package babel Info: Hyphen rules for 'spanish' set to \l@english
+(babel)             (\language0). Reported on input line 52.
 \es@quottoks=\toks17
-\es@quotdepth=\count199
+\es@quotdepth=\count198
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-))
-(/usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+)) (/usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 )
@@ -55,18 +63,18 @@ Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
 
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
+\etb@tempcnta=\count199
 )
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-\csq@reset=\count267
-\csq@gtype=\count268
-\csq@glevel=\count269
-\csq@qlevel=\count270
-\csq@maxlvl=\count271
-\csq@tshold=\count272
+\csq@reset=\count266
+\csq@gtype=\count267
+\csq@glevel=\count268
+\csq@qlevel=\count269
+\csq@maxlvl=\count270
+\csq@tshold=\count271
 \csq@ltx@everypar=\toks19
 
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -82,7 +90,7 @@ File: csquotes.cfg
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 \MT@toks=\toks20
 \MT@tempbox=\box51
-\MT@count=\count273
+\MT@count=\count272
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
 LaTeX Info: Redefining \leftprotrusion on input line 1060.
 \MT@prot@toks=\toks21
@@ -90,7 +98,7 @@ LaTeX Info: Redefining \rightprotrusion on input line 1078.
 LaTeX Info: Redefining \textls on input line 1368.
 \MT@outer@kern=\dimen142
 LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count274
+\MT@listname@count=\count273
 
 (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
@@ -132,7 +140,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count275
+\lrq@indent=\count274
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -144,49 +152,49 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count276
-\c@listtotal=\count277
-\c@listcount=\count278
-\c@liststart=\count279
-\c@liststop=\count280
-\c@citecount=\count281
-\c@citetotal=\count282
-\c@multicitecount=\count283
-\c@multicitetotal=\count284
-\c@instcount=\count285
-\c@maxnames=\count286
-\c@minnames=\count287
-\c@maxitems=\count288
-\c@minitems=\count289
-\c@citecounter=\count290
-\c@maxcitecounter=\count291
-\c@savedcitecounter=\count292
-\c@uniquelist=\count293
-\c@uniquename=\count294
-\c@refsection=\count295
-\c@refsegment=\count296
-\c@maxextratitle=\count297
-\c@maxextratitleyear=\count298
-\c@maxextraname=\count299
-\c@maxextradate=\count300
-\c@maxextraalpha=\count301
-\c@abbrvpenalty=\count302
-\c@highnamepenalty=\count303
-\c@lownamepenalty=\count304
-\c@maxparens=\count305
-\c@parenlevel=\count306
-\blx@tempcnta=\count307
-\blx@tempcntb=\count308
-\blx@tempcntc=\count309
-\c@blx@maxsection=\count310
-\blx@maxsegment@0=\count311
-\blx@notetype=\count312
-\blx@parenlevel@text=\count313
-\blx@parenlevel@foot=\count314
-\blx@sectionciteorder@0=\count315
-\blx@sectionciteorderinternal@0=\count316
-\blx@entrysetcounter=\count317
-\blx@biblioinstance=\count318
+\c@tabx@nest=\count275
+\c@listtotal=\count276
+\c@listcount=\count277
+\c@liststart=\count278
+\c@liststop=\count279
+\c@citecount=\count280
+\c@citetotal=\count281
+\c@multicitecount=\count282
+\c@multicitetotal=\count283
+\c@instcount=\count284
+\c@maxnames=\count285
+\c@minnames=\count286
+\c@maxitems=\count287
+\c@minitems=\count288
+\c@citecounter=\count289
+\c@maxcitecounter=\count290
+\c@savedcitecounter=\count291
+\c@uniquelist=\count292
+\c@uniquename=\count293
+\c@refsection=\count294
+\c@refsegment=\count295
+\c@maxextratitle=\count296
+\c@maxextratitleyear=\count297
+\c@maxextraname=\count298
+\c@maxextradate=\count299
+\c@maxextraalpha=\count300
+\c@abbrvpenalty=\count301
+\c@highnamepenalty=\count302
+\c@lownamepenalty=\count303
+\c@maxparens=\count304
+\c@parenlevel=\count305
+\blx@tempcnta=\count306
+\blx@tempcntb=\count307
+\blx@tempcntc=\count308
+\c@blx@maxsection=\count309
+\blx@maxsegment@0=\count310
+\blx@notetype=\count311
+\blx@parenlevel@text=\count312
+\blx@parenlevel@foot=\count313
+\blx@sectionciteorder@0=\count314
+\blx@sectionciteorderinternal@0=\count315
+\blx@entrysetcounter=\count316
+\blx@biblioinstance=\count317
 \labelnumberwidth=\skip51
 \labelalphawidth=\skip52
 \biblabelsep=\skip53
@@ -197,10 +205,10 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip58
 \blx@bcfin=\read3
 \blx@bcfout=\write3
-\blx@langwohyphens=\language9
-\c@mincomprange=\count319
-\c@maxcomprange=\count320
-\c@mincompwidth=\count321
+\blx@langwohyphens=\language6
+\c@mincomprange=\count318
+\c@maxcomprange=\count319
+\c@mincompwidth=\count320
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -209,74 +217,74 @@ File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count322
-\c@savedafterword=\count323
-\c@annotator=\count324
-\c@savedannotator=\count325
-\c@author=\count326
-\c@savedauthor=\count327
-\c@bookauthor=\count328
-\c@savedbookauthor=\count329
-\c@commentator=\count330
-\c@savedcommentator=\count331
-\c@editor=\count332
-\c@savededitor=\count333
-\c@editora=\count334
-\c@savededitora=\count335
-\c@editorb=\count336
-\c@savededitorb=\count337
-\c@editorc=\count338
-\c@savededitorc=\count339
-\c@foreword=\count340
-\c@savedforeword=\count341
-\c@holder=\count342
-\c@savedholder=\count343
-\c@introduction=\count344
-\c@savedintroduction=\count345
-\c@namea=\count346
-\c@savednamea=\count347
-\c@nameb=\count348
-\c@savednameb=\count349
-\c@namec=\count350
-\c@savednamec=\count351
-\c@translator=\count352
-\c@savedtranslator=\count353
-\c@shortauthor=\count354
-\c@savedshortauthor=\count355
-\c@shorteditor=\count356
-\c@savedshorteditor=\count357
-\c@labelname=\count358
-\c@savedlabelname=\count359
-\c@institution=\count360
-\c@savedinstitution=\count361
-\c@lista=\count362
-\c@savedlista=\count363
-\c@listb=\count364
-\c@savedlistb=\count365
-\c@listc=\count366
-\c@savedlistc=\count367
-\c@listd=\count368
-\c@savedlistd=\count369
-\c@liste=\count370
-\c@savedliste=\count371
-\c@listf=\count372
-\c@savedlistf=\count373
-\c@location=\count374
-\c@savedlocation=\count375
-\c@organization=\count376
-\c@savedorganization=\count377
-\c@origlocation=\count378
-\c@savedoriglocation=\count379
-\c@origpublisher=\count380
-\c@savedorigpublisher=\count381
-\c@publisher=\count382
-\c@savedpublisher=\count383
-\c@language=\count384
-\c@savedlanguage=\count385
-\c@origlanguage=\count386
-\c@savedoriglanguage=\count387
-\c@pageref=\count388
-\c@savedpageref=\count389
+\c@afterword=\count321
+\c@savedafterword=\count322
+\c@annotator=\count323
+\c@savedannotator=\count324
+\c@author=\count325
+\c@savedauthor=\count326
+\c@bookauthor=\count327
+\c@savedbookauthor=\count328
+\c@commentator=\count329
+\c@savedcommentator=\count330
+\c@editor=\count331
+\c@savededitor=\count332
+\c@editora=\count333
+\c@savededitora=\count334
+\c@editorb=\count335
+\c@savededitorb=\count336
+\c@editorc=\count337
+\c@savededitorc=\count338
+\c@foreword=\count339
+\c@savedforeword=\count340
+\c@holder=\count341
+\c@savedholder=\count342
+\c@introduction=\count343
+\c@savedintroduction=\count344
+\c@namea=\count345
+\c@savednamea=\count346
+\c@nameb=\count347
+\c@savednameb=\count348
+\c@namec=\count349
+\c@savednamec=\count350
+\c@translator=\count351
+\c@savedtranslator=\count352
+\c@shortauthor=\count353
+\c@savedshortauthor=\count354
+\c@shorteditor=\count355
+\c@savedshorteditor=\count356
+\c@labelname=\count357
+\c@savedlabelname=\count358
+\c@institution=\count359
+\c@savedinstitution=\count360
+\c@lista=\count361
+\c@savedlista=\count362
+\c@listb=\count363
+\c@savedlistb=\count364
+\c@listc=\count365
+\c@savedlistc=\count366
+\c@listd=\count367
+\c@savedlistd=\count368
+\c@liste=\count369
+\c@savedliste=\count370
+\c@listf=\count371
+\c@savedlistf=\count372
+\c@location=\count373
+\c@savedlocation=\count374
+\c@organization=\count375
+\c@savedorganization=\count376
+\c@origlocation=\count377
+\c@savedoriglocation=\count378
+\c@origpublisher=\count379
+\c@savedorigpublisher=\count380
+\c@publisher=\count381
+\c@savedpublisher=\count382
+\c@language=\count383
+\c@savedlanguage=\count384
+\c@origlanguage=\count385
+\c@savedoriglanguage=\count386
+\c@pageref=\count387
+\c@savedpageref=\count388
 \shorthandwidth=\skip59
 \shortjournalwidth=\skip60
 \shortserieswidth=\skip61
@@ -302,19 +310,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count390
-\c@textcitetotal=\count391
-\c@textcitemaxnames=\count392
-\c@biburlbigbreakpenalty=\count393
-\c@biburlbreakpenalty=\count394
-\c@biburlnumpenalty=\count395
-\c@biburlucpenalty=\count396
-\c@biburllcpenalty=\count397
+\c@textcitecount=\count389
+\c@textcitetotal=\count390
+\c@textcitemaxnames=\count391
+\c@biburlbigbreakpenalty=\count392
+\c@biburlbreakpenalty=\count393
+\c@biburlnumpenalty=\count394
+\c@biburlucpenalty=\count395
+\c@biburllcpenalty=\count396
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count398
+\c@smartand=\count397
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -326,8 +334,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count399
-\c@bbx:relatedtotal=\count400
+\c@bbx:relatedcount=\count398
+\c@bbx:relatedtotal=\count399
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -360,7 +368,7 @@ Package: expl3 2024-02-20 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count401
+\l__color_backend_stack_int=\count400
 \l__pdf_internal_box=\box52
 ))
 Package biblatex Info: ... and expl3
@@ -460,16 +468,16 @@ Package biblatex Info: Reference segment=0 on input line 23.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count402
+\scratchcounter=\count401
 \scratchdimen=\dimen145
 \scratchbox=\box53
-\nofMPsegments=\count403
-\nofMParguments=\count404
+\nofMPsegments=\count402
+\nofMParguments=\count403
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count405
+\MPscratchCnt=\count404
 \MPscratchDim=\dimen146
-\MPnumerator=\count406
-\makeMPintoPDFobject=\count407
+\MPnumerator=\count405
+\makeMPintoPDFobject=\count406
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -480,31 +488,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<recursos/Universidad_Veracruzana.png, id=1, 465.74pt x 602.25pt>
-File: recursos/Universidad_Veracruzana.png Graphic file (type png)
-<use recursos/Universidad_Veracruzana.png>
-Package pdftex.def Info: recursos/Universidad_Veracruzana.png  used on input li
+<pictures/Universidad_Veracruzana.png, id=1, 465.74pt x 602.25pt>
+File: pictures/Universidad_Veracruzana.png Graphic file (type png)
+<use pictures/Universidad_Veracruzana.png>
+Package pdftex.def Info: pictures/Universidad_Veracruzana.png  used on input li
 ne 28.
 (pdftex.def)             Requested size: 68.99895pt x 89.22165pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/cm-super/cm-super-t1.enc} <./recursos/Universidad_Veracruzana.png>]
-Cap\'{\i }tulo 1.
-[1
-
-] [2]
-<recursos/placa-arduino.jpg, id=25, 1003.75pt x 668.4975pt>
-File: recursos/placa-arduino.jpg Graphic file (type jpg)
-<use recursos/placa-arduino.jpg>
-Package pdftex.def Info: recursos/placa-arduino.jpg  used on input line 75.
+/enc/dvips/cm-super/cm-super-t1.enc} <./pictures/Universidad_Veracruzana.png>] 
+[1] [2]
+<pictures/placa-arduino.jpg, id=25, 1003.75pt x 668.4975pt>
+File: pictures/placa-arduino.jpg Graphic file (type jpg)
+<use pictures/placa-arduino.jpg>
+Package pdftex.def Info: pictures/placa-arduino.jpg  used on input line 75.
 (pdftex.def)             Requested size: 172.5pt x 114.87732pt.
-<recursos/imagen.jpg, id=26, 451.6875pt x 237.13594pt>
-File: recursos/imagen.jpg Graphic file (type jpg)
-<use recursos/imagen.jpg>
-Package pdftex.def Info: recursos/imagen.jpg  used on input line 81.
+<pictures/imagen.jpg, id=26, 451.6875pt x 237.13594pt>
+File: pictures/imagen.jpg Graphic file (type jpg)
+<use pictures/imagen.jpg>
+Package pdftex.def Info: pictures/imagen.jpg  used on input line 81.
 (pdftex.def)             Requested size: 172.5pt x 90.56488pt.
- [3 <./recursos/placa-arduino.jpg> <./recursos/imagen.jpg>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
 4.
 
@@ -521,16 +525,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 84.
 
 Overfull \hbox (8.2998pt too wide) in paragraph at lines 87--87
-[]\T1/cmr/m/n/10 (-20) Datademia. \T1/cmr/m/it/10 (-20) ¾Qué es SQL? - Da-ta-de
--mia --- da-ta-de-mia.es\T1/cmr/m/n/10 (-20) . $\T1/cmtt/m/n/10 https : / / dat
-ademia .
+[]\T1/cmr/m/n/10 (-20) Datademia. \T1/cmr/m/it/10 (-20) ¾Qué es SQL? - Datademi
+a --- datademia.es\T1/cmr/m/n/10 (-20) . $\T1/cmtt/m/n/10 https : / / datademia
+ .
  []
 
 
 Overfull \hbox (5.04425pt too wide) in paragraph at lines 87--87
 []\T1/cmr/m/n/10 (-20) fundaciondelcorazon. \T1/cmr/m/it/10 (-20) Fre-cuen-cia 
-car-dia-ca --- fun-da-cion-del-co-ra-zon.com\T1/cmr/m/n/10 (-20) . $\T1/cmtt/m/
-n/10 https :
+car-dia-ca --- fun-da-ciondel-co-ra-zon.com\T1/cmr/m/n/10 (-20) . $\T1/cmtt/m/n
+/10 https :
+ []
+
+[3 <./pictures/placa-arduino.jpg> <./pictures/imagen.jpg>]
+Overfull \hbox (51.98073pt too wide) in paragraph at lines 87--87
+[]\T1/cmr/m/it/10 (-20) seaborn: sta-tis-ti-cal da-ta vi-su-al-iza-tion seaborn
+ 0.13.2 doc-u-men-ta-tion --- seaborn.pydata.org\T1/cmr/m/n/10 (-20) .
  []
 
 ! Undefined control sequence.
@@ -588,9 +598,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4
-
-] (./document.aux
+[4] (./document.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -604,29 +612,28 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13665 strings out of 476014
- 252147 string characters out of 5792004
- 1934187 words of memory out of 5000000
- 35566 multiletter control sequences out of 15000+600000
- 573589 words of font info for 111 fonts, out of 8000000 for 9000
- 40 hyphenation exceptions out of 8191
+ 13638 strings out of 476076
+ 251851 string characters out of 5793774
+ 1933187 words of memory out of 5000000
+ 35539 multiletter control sequences out of 15000+600000
+ 571805 words of font info for 106 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  66i,6n,81p,1005b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx248
-8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfcc2488.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
-m1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sftt1000.pfb>
-Output written on document.pdf (5 pages, 413711 bytes).
+exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc100
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
+m1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on document.pdf (5 pages, 404349 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 37392 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 33296 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -18,10 +18,16 @@ Recuerden que todas las ventanas tenemos que hacerlas como clases para poder ser
     - [x] Para datos de usuario (con los datos capturados) 
     - [ ] para las  rutas donde estan guardadas las frecuencias cardiacas relacionadas con sus fechas.
 - [x] Crear una función que permita guardar los datos capturados en la dataframe.
-- [ ] Crear una función que nos permita entrar los datos del usuario especificado.
+- [x] Crear una función que nos permita entrar los datos del usuario especificado.
 - [ ] Crear una función que permita directamente presionar botones epecíficos con la tecla "Enter".
-- [ ] Crear un progama que permita obtener datos de sensor.
 - [ ] Crear una ventana que permita graficar los pulsos cardiacos.
+- [x] Crear una ventana que nos permita hacer una prueba de esfuerzo.
+- [ ] Crear un progama que permita obtener datos de sensor.
+    - [ ] Comunicarse con el sensor
+    - [ ] Decirle al sensor que guarde los datos en un archivo de texto.
+    - [ ] Obtener los datos del sensor.
+    - [ ] Graficar los datos.
+    - [ ] Calcular frecuencia cardiaca.
 
 ## Funcionalidades a aclarar:
 - ¿Con qué paleta de colores trabajaremos?
@@ -52,7 +58,7 @@ Te va a pedir un usuario y una contraseña, en usuario ponen su nombre y en cont
 *¿Si cometo un error arruinare el trabajo de los demás?* Mientras estés en tu rama, puedes hacer y deshacer lo que quieras, pero si moviste sin querer algo de la rama principal o del desarrollo, podemos deshacer el cambio hasta el último punto de guardado.
 
 ## Ambientes (el archivo ".venv" que ven en vscode)
-}
+
 ### crear y activar entornos en python:
 crear un entorno:
 ```python

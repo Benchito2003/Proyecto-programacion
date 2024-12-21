@@ -50,7 +50,7 @@ class CustomComboBox(customtkinter.CTkComboBox):
         super().__init__(master, values=valores, command=comando, font=(fuente, t_fuente), dropdown_font=(fuente, t_fuente), bg_color=c1, hover=True, justify="center", fg_color=c4)
 
 
-# Configuración de Frames
+# Plantilla para hacer frames:
 class CustomFrame(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, fg_color=c1, bg_color=c1,**kwargs)
@@ -58,3 +58,17 @@ class CustomFrame(customtkinter.CTkFrame):
         ## Configuraciones del grid
         self.columnconfigure([0, 1, 2], weight=1)
         self.rowconfigure([0,1,2,3,4,5], weight=1)
+
+        ## frame anteriro y siguiente
+        self.anterior = None
+        self.siguiente = None
+
+    # Funciones que tendran todas los frames
+    ## Establecer cual es el frame que va antes que ellos o cual es el que sigue
+    def set_anterior(self, frame):
+        """ Definir cual es el frame anterior a este """
+        self.anterior = frame
+
+    def set_siguiente(self, frame):
+        """ Definir cual frame es el siguiente a este """
+        self.siguiente = frame
